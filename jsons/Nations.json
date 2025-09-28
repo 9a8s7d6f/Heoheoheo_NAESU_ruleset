@@ -1,41 +1,239 @@
 [
-    {
-		"name": "Adelle Corp",
-		"leaderName": "Kane",
+	{
+		"name": "Eastern Roman Empire",
+		"leaderName": "hahahaking999",
+		"adjective": ["Eastern Roman"],
+		"startBias": ["Tundra"],
 		"preferredVictoryType": "Domination",
+		
+		"startIntroPart1": "asdf",
+		"startIntroPart2": "asdf",
+		
+		"declaringWar": "Yae! Jukeuryeom~",
+		"attacked": "Yae! Jangnanhani~",
+		"defeated": "Aigonan!!!!!!",
+		"introduction": "Bangapsudal",
+		
+		"neutralHello": "Bangapsoidat",
+		"neutralLetsHearIt": "Kuerim kuerilgeyo~",
+		"neutralNo": "Yaenuen! doegekni!!",
+		"neutralYes": "Oong~ jotajota",
+		
+		"hateHello": "Ssuep Bangapsoidat",
+		"hateLetsHearIt": "Yae, jakjakharyeom~",
+		"hateNo": "jukeobeoriryeom~",
+		"hateYes": "Koryeohaeboji",
+		
+		"afterPeace": "Honghong jossoidat",
+		"tradeRequest": "Yae keurimkeuriryeom!!",
+		"declaringFriendship": "동맹ㄱㄱ",
+		"denounced": "나가~"
 
-		"startIntroPart1": "Sample text.",
-		"startIntroPart2": "Sample text.",
-		"declaringWar": "You stand in the way of my people. Let us solve this like warriors!",
-		"attacked": "You dare have the courage to challenge nod, but no fear, for I will sweep you out of history.",
-		"defeated": "You have the guts to call my body a corpse but beware, I know what will happen to our future- our tiberium future.",
-		"introduction": "If I am cut, Do I not bleed?",
-		"tradeRequest": "I am not always this generous, but we hope you take this rare opportunity we give you.",
-		"outerColor": [0,0,0],
-		"innerColor": [142,22,0],
-		"uniqueName": "Word of Nod",
-		"uniques": ["[+30]% Strength <vs [City-States]>", "[+2] Movement <for [Armored] units>"],
-		"cities": ["Ketilsstaoir","Frooaross","Hraun","Geirhildarvatn","Dumbshaf","Leioolfsstaoir","Hraunsass","Mosfell","Geirmundarstaoir","Holmgaror","Selaeyrr",
-"Horga","Fellshverfi","Kalfborgara","Reykir inir efri","Bolstaor","Beruvikrhraun","Berghylr","Rauosgil"]
+		//흰금 [255,255,255]에 [245, 210, 0]
+		//보초 [92,52,121]에 [5,134,5]
+		"outerColor": [255,255,255],
+		"innerColor": [245,210,0],
+		"uniqueName": "birthplace of civilization",
+		"uniques": [
+			"[+1 Gold, +1 Production] [in all cities]",
+			"[+1 Gold, +1 Production] [in this city] <in cities connected to the capital>",
+			"[+1453]% Production when constructing [Aya Sofya] wonders [in capital]",
+			"[+529]% Production when constructing [Aya Sofya] wonders [in capital] <after discovering [Masonry]>",
+			"[+500]% Production when constructing [Aya Sofya] wonders [in capital] <after discovering [Construction]>",
+			"[+500]% Production when constructing [Aya Sofya] wonders [in capital] <after discovering [Engineering]>",
+			"[+500]% Production when constructing [Aya Sofya] wonders [in capital] <after discovering [Philosophy]>",
+			"[-22]% [Happiness]",
+			"[-1 Happiness]",
+			"[-10]% [Production] [in all cities] <when below [0] [Happiness]>",
+			"[-20]% [Production] [in all cities] <when below [-10] [Happiness]>",
+			"[-30]% [Production] [in all cities] <when below [-20] [Happiness]>",
+			"[-50]% [Production] [in all cities] <when below [-30] [Happiness]>",
+			"[-65]% [Production] [in all cities] <when below [-40] [Happiness]>",
+			"Nullifies [Culture] [in all cities] <when below [-50] [Happiness]>",
+			"Nullifies [Science] [in all cities] <when below [-50] [Happiness]>",
+			"Gain a free [Heoheoheodevil] [in all cities] <when number of [[World Wonder] Buildings] is more than [4]>"
+		],
+		"cities": ["Constantinopolis","Patatapolis","Kriopolis","Adrianopolis","Third City","북부 마을", "Pyeongyang","Megalopolis","Edirne","Nicaeanopolis"],
+		"spyNames": ["Kaelen","Rivor","Seltra","Daven","Lyric","Corven","Veyra","Talin","Marvek","Zyra","Orin","Kyler","Sereth","Jorin","Velric","Alaric","Nyven","Cairos","Tavren","Erynd","Liora","Soren","Draven","Korra","Rilian","Veylin","Darius","Zaren","Myla","Thalen"],
+		"civilopediaText": [
+			{ "text": "abcde" },
+    		{ "separator": true },
+    		{
+        		"text": "fghijk",
+        		"link": "Unit/Scout",
+        		"color": "red"
+    		},
+    		{
+        		"text": "lmnopqrs",
+        		"header": 1,
+        		"starred": true,
+        		"color": "#ffeb7f"
+    		}
+		]
+	},
+	
+	{
+		"name": "Theodosiana Free State",
+		"leaderName": "Monakho",
+		"adjective": ["jenaiquiterd"],
+		"startBias": ["Plain"],
+		"preferredVictoryType": "Diplomatic",
+		
+		"startIntroPart1": "asdf",
+		"startIntroPart2": "asdf",
+		
+		"declaringWar": "Yae! Jukeuryeom~",
+		"attacked": "Yae! Jangnanhani~",
+		"defeated": "Aigonan!!!!!!",
+		"introduction": "Bangapsudal",
+		
+		"neutralHello": "Bangapsoidat",
+		"neutralLetsHearIt": "Kuerim kuerilgeyo~",
+		"neutralNo": "Yaenuen! doegekni!!",
+		"neutralYes": "Oong~ jotajota",
+		
+		"hateHello": "Ssuep Bangapsoidat",
+		"hateLetsHearIt": "Yae, jakjakharyeom~",
+		"hateNo": "jukeobeoriryeom~",
+		"hateYes": "Koryeohaeboji",
+		
+		"afterPeace": "Honghong jossoidat",
+		"tradeRequest": "Yae keurimkeuriryeom!!",
+		"outerColor": [16,16,16],
+		"innerColor": [255,200,200],
+		"uniqueName": "accumulation of wealth",
+		"uniques": [
+			"[+3 Gold] [in all cities]",
+			"[+2 Gold] from each Trade Route",
+			"[+10]% [Gold] [in all cities connected to capital]",
+			"[+10]% [Gold] [in capital]",
+			"[+10]% [Gold] [in all cities] <after discovering [Economics]>",
+			"[+50]% [Strategic] resource production",
+			"[+2 Gold] [in all cities] <after discovering [Mining]>",
+			"[+2 Gold, +1 Production] [in all cities] <after discovering [Machinery]>",
+			"[+3 Gold, +2 Production] [in all cities] <after discovering [Chemistry]>",
+			"[-30]% Strength <vs [Barbarians] units>",
+			"[+1 Happiness] <for every [floor( ( [Gold] / 500 ) )]>",
+			"Production to [Gold] conversion in cities changed by [+50]%",
+			"[-20]% Culture cost of natural border growth [in all cities]",
+			"[-90]% unhappiness from the number of cities",
+			"[-20]% Unhappiness from [Population] [in all cities]",
+			"[+1]% Strength <for every [floor( ( [Units] / 4 ) )]>"
+		],
+		"cities": ["Theodosiana","Mali","Monakhoburg", "Désert Bleu", "Notiapolis", "1. Monakhopolis", "2. Monakhopolis", "Neu-Constantinopolis", "Neu-Patatapolis", "Neu-Patatapolis", "Augustia", "Neu-Amondpolis"],
+		"spyNames": ["Kaelen","Rivor","Seltra","Daven","Lyric","Corven","Veyra","Talin","Marvek","Zyra","Orin","Kyler","Sereth","Jorin","Velric","Alaric","Nyven","Cairos","Tavren","Erynd","Liora","Soren","Draven","Korra","Rilian","Veylin","Darius","Zaren","Myla","Thalen"]
 	},
 
 	{
-		"name": "The New Movement",
-		"leaderName": "Anton Slavik",
-		"preferredVictoryType": "Domination",
-
-		"startIntroPart1": "Sample text.",
-		"startIntroPart2": "Sample text",
-		"declaringWar": "It is in  my Intentions to spread the word of Nod into your land.",
-		"attacked": "Pitiful fool! Now we shall destroy you!",
-		"defeated": "I see for the black hand has been unworthy to serve Kane.",
-		"introduction": "If you would stay out of our way then you might live to tell your tale.",
-		"tradeRequest": "I would be grateful if you agreed on the following proposal.",
-		"outerColor": [139,0,0],
+		"name": "Mobidick Polis",
+		"leaderName": "모비딕",
+		"adjective": ["모비딕폴리스의"],
+		"startBias": ["Tundra"],
+		"preferredVictoryType": "Diplomatic",
+		
+		"startIntroPart1": "asdf",
+		"startIntroPart2": "asdf",
+		
+		"declaringWar": "Yae! Jukeuryeom~",
+		"attacked": "Yae! Jangnanhani~",
+		"defeated": "Aigonan!!!!!!",
+		"introduction": "Bangapsudal",
+		
+		"neutralHello": "Bangapsoidat",
+		"neutralLetsHearIt": "Kuerim kuerilgeyo~",
+		"neutralNo": "Yaenuen! doegekni!!",
+		"neutralYes": "Oong~ jotajota",
+		
+		"hateHello": "Ssuep Bangapsoidat",
+		"hateLetsHearIt": "Yae, jakjakharyeom~",
+		"hateNo": "jukeobeoriryeom~",
+		"hateYes": "Koryeohaeboji",
+		
+		"afterPeace": "Honghong jossoidat",
+		"tradeRequest": "Yae keurimkeuriryeom!!",
+		"outerColor": [255,255,255],
+		"innerColor": [76,109,240],
+		"uniqueName": "노동의 가치",
+		"uniques": [
+			"[+1 Food, +1 Happiness] from [Farm] tiles [in all cities]",
+			"[+1 Gold, +1 Happiness] from [Plantation] tiles [in all cities]",
+			"[+1 Food] from [Farm] tiles [in all cities] <after discovering [Fertilizer]>",
+			"[+1 Gold] from [Plantation] tiles [in all cities] <after discovering [Fertilizer]>",
+			"[+1 Production] from [Mine] tiles [in all cities]",
+			"[+1 Production] from [Quarry] tiles [in all cities]",
+			"[+1 Production] from [Lumber mill] tiles [in all cities]",
+			"[+1 Production] from [Mine] tiles [in all cities] <after discovering [Chemistry]>",
+			"[+1 Production] from [Quarry] tiles [in all cities] <after discovering [Chemistry]>",
+			"[+1 Production] from [Lumber mill] tiles [in all cities] <after discovering [Chemistry]>",
+			"[+1 Production] from all [Production] buildings",
+			"[+1 Production] from all [Production] buildings <after discovering [Physics]>",
+			
+			"[+50]% maintenance costs",
+			"[+1 Gold] per [5] population [in all cities]",
+			"[-20]% Culture cost of natural border growth [in all cities]",
+			"[+20]% Production towards any buildings that already exist in the Capital",
+			"[+50]% Unhappiness from [Specialists] [in all cities]",
+			"[+100]% Unhappiness from [Unemployed] [in all cities]",
+			"[+20]% Culture cost of adopting new Policies",
+			"[+20]% Science cost of researching new Technologies",
+			"[-20]% spy effectiveness [in all cities]",
+			"May buy items in puppet cities"
+		],
+		"cities": ["파타타폴리스","신 모비딕폴리스","모비딕 3시티","모비딕 4시티","모비딕 5시티","모비딕 6시티","모비딕 7시티","모비딕 8시티","모비딕 9시티","모비딕 10시티","모비딕 11시티","모비딕 12시티"],
+		"spyNames": ["Kaelen","Rivor","Seltra","Daven","Lyric","Corven","Veyra","Talin","Marvek","Zyra","Orin","Kyler","Sereth","Jorin","Velric","Alaric","Nyven","Cairos","Tavren","Erynd","Liora","Soren","Draven","Korra","Rilian","Veylin","Darius","Zaren","Myla","Thalen"]
+	},
+	{
+		"name": "Alje Office Autonomous Branch",
+		"leaderName": "나알제",
+		"adjective": ["알제사무소의"],
+		"startBias": ["Tundra"],
+		"preferredVictoryType": "Scientific",
+		
+		"startIntroPart1": "asdf",
+		"startIntroPart2": "asdf",
+		
+		"declaringWar": "전쟁ㄱㄱ",
+		"attacked": "어어",
+		"defeated": "아이고난이네 그냥",
+		"introduction": "안녕하세요",
+		
+		"neutralHello": "아 코딩하기 귀찮다",
+		"neutralLetsHearIt": "들어볼게요",
+		"neutralNo": "사양하겠습니다",
+		"neutralYes": "ㄱㄱ",
+		
+		"hateHello": "막 저한테 거래창으로 제 자원 염탐하는건 아니죠?",
+		"hateLetsHearIt": "들어봅시다",
+		"hateNo": "반대하겠습니다",
+		"hateYes": "네.",
+		
+		"afterPeace": "평협 ㅈㅇㄱ",
+		"tradeRequest": "거래ㄱㄱ",
+		"outerColor": [255,255,255],
 		"innerColor": [0,0,0],
-		"uniqueName": "Purification",
-		"uniques": ["No damage penalty for wounded units <for [non-air] units>"],
-		"cities": ["Ketilsstaoir","Frooaross","Hraun","Geirhildarvatn","Dumbshaf","Leioolfsstaoir","Hraunsass","Mosfell","Geirmundarstaoir","Holmgaror","Selaeyrr",
-"Horga","Fellshverfi","Kalfborgara","Reykir inir efri","Bolstaor","Beruvikrhraun","Berghylr","Rauosgil"]
+		"uniqueName": "알제사무소",
+		"uniques": [
+			"[+30]% [Science] <while researching [Writing]>",
+			"[+30]% [Science] <while researching [Mathematics]>",
+			"[+30]% [Science] <while researching [Engineering]>",
+			"[+30]% [Science] <while researching [Philosophy]>",
+			"[+30]% [Science] <while researching [Physics]>",
+			"[+30]% [Science] <while researching [Astronomy]>",
+			"[+30]% [Science] <while researching [Chemistry]>",
+			"[+30]% [Science] <while researching [Economics]>",
+			"[+30]% [Science] <while researching [Scientific Theory]>",
+			"[+30]% [Science] <while researching [Biology]>",
+			"[+30]% [Science] <while researching [Atomic Theory]>",
+			"[+30]% [Science] <while researching [Computers]>",
+			"[+30]% [Science] <while researching [Telecommunications]>",
+			"[+30]% [Science] <while researching [Particle Physics]>",
+//[Culture] Per Turn
+			"[+1 Production] from every [Production]",
+			"[+1 Happiness] from every [Science]",
+			"[+20 Gold] <for every [Era number]>"
+			
+		],
+		"cities": ["The Edge", "월마리아", "북아몬드폴리스", "몬드님왜코딩안해요tq"],
+		"spyNames": ["Kaelen","Rivor","Seltra","Daven","Lyric","Corven","Veyra","Talin","Marvek","Zyra","Orin","Kyler","Sereth","Jorin","Velric","Alaric","Nyven","Cairos","Tavren","Erynd","Liora","Soren","Draven","Korra","Rilian","Veylin","Darius","Zaren","Myla","Thalen"]
 	}
 ]
