@@ -202,7 +202,7 @@
 				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
 			},
 			{
-				"name": "papermaking",
+				"name": "Papermaking",
 				"row": 9,
 				"prerequisites": ["Waterway"],
 				"quote": "'어느 땐 종이에 글을 쓰다보면, 조각하고 있다는 생각이 들 때가 있다' - 빅토르 위고"
@@ -246,6 +246,69 @@
 				"prerequisites": ["Wooden architecture"],
 				"quote": ""
 			}
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Nether Era",
+		"techCost": 230,
+		"buildingCost": 160,
+		"wonderCost": 400,
+		"techs": [
+			{
+				"name": "Advanced Armor",
+				"row": 2,
+				"prerequisites": ["Armor","Diamond"],
+				"quote": ""
+			},
+			{
+				"name": "Advanced Tools",
+				"row": 3,
+				"prerequisites": ["Diamond"],
+				"quote": ""
+			},
+			{
+				"name": "Enchanting",
+				"row": 4,
+				"prerequisites": ["Lapis Lazuli","Diamond"],
+				"quote": ""
+			},
+			{
+				"name": "Nether",
+				"row": 5,
+				"prerequisites": ["Diamond"],
+				"quote": ""
+			},
+			{
+				"name": "Machinery",
+				"row": 6,
+				"prerequisites": ["Redstone"],
+				"quote": ""
+			},
+			{
+				"name": "Roads & Rails",
+				"row": 7,
+				"prerequisites": ["Redstone","Engineering"],
+				"quote": ""
+			},
+			{
+				"name": "Civil Service",
+				"row": 8,
+				"prerequisites": ["Engineering","Papermaking"],
+				"quote": ""
+			},
+			{
+				"name": "Records and Comedy",
+				"row": 9,
+				"prerequisites": ["Papermaking"],
+				"quote": ""
+			},
+			{
+				"name": "Shipbuilding",
+				"row": 10,
+				"prerequisites": ["Crossbow"],
+				"quote": ""
+			},
 		]
 	}
 	
