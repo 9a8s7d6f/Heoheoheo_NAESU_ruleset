@@ -308,7 +308,85 @@
 				"row": 10,
 				"prerequisites": ["Crossbow"],
 				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Nether Era",
+		"techCost": 295,
+		"buildingCost": 180,
+		"wonderCost": 450,
+		"techs": [
+			{
+				"name": "Discipline",
+				"row": 4,
+				"prerequisites": ["Advanced Tools","Enchanting"],
+				"quote": ""
 			},
+			{
+				"name": "Civil Engineering",
+				"row": 6,
+				"prerequisites": ["Machinery","Civil Service"],
+				"quote": ""
+			},
+			{
+				"name": "Trade",
+				"row": 8,
+				"prerequisites": ["Civil Service"],
+				"quote": ""
+			},
+			{
+				"name": "Theology",
+				"row": 9,
+				"prerequisites": ["Records and Comedy"],
+				"quote": ""
+			},
+			{
+				"name": "Expedition",
+				"row": 10,
+				"prerequisites": ["Records and Comedy","Shipbuilding"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Nether Era",
+		"techCost": 385,
+		"buildingCost": 210,
+		"wonderCost": 550,
+		"techs": [
+			{
+				"name": "Debris Excavation",
+				"row": 2,
+				"prerequisites": ["Advanced Tools","Advanced Armor"],
+				"quote": ""
+			},
+			{
+				"name": "Trident",
+				"row": 3,
+				"prerequisites": ["Advanced Armor","Discipline","Theology"],
+				"quote": ""
+			},
+			{
+				"name": "Depth ruins",
+				"row": 5,
+				"prerequisites": ["Nether"],
+				"quote": ""
+			},
+			{
+				"name": "Nether Highway",
+				"row": 7,
+				"prerequisites": ["Nether","Roads & Rails","Expedition"],
+				"quote": ""
+			},
+			{
+				"name": "Jurisprudence",
+				"row": 9,
+				"prerequisites": ["Theology","Expedition"],
+				"quote": ""
+			}
 		]
 	}
 	
