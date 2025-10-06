@@ -1,7 +1,7 @@
 [
 	{
 		"columnNumber": 0,
-		"era": "Beginning Era",
+		"era": "Beginning era",
 		"techCost": 10,
 		"buildingCost": 40,
 		"wonderCost": 185,
@@ -22,7 +22,7 @@
 	},
 	{
 		"columnNumber": 1,
-		"era": "Beginning Era",
+		"era": "Beginning era",
 		"techCost": 25,
 		"buildingCost": 60,
 		"wonderCost": 185,
@@ -43,7 +43,7 @@
 	},
 	{
 		"columnNumber": 2,
-		"era": "Beginning Era",
+		"era": "Beginning era",
 		"techCost": 35,
 		"buildingCost": 75,
 		"wonderCost": 185,
@@ -88,7 +88,7 @@
 	},
 	{
 		"columnNumber": 3,
-		"era": "Beginning Era",
+		"era": "Beginning era",
 		"techCost": 55,
 		"buildingCost": 80,
 		"wonderCost": 200,
@@ -115,7 +115,7 @@
 	},
 	{
 		"columnNumber": 4,
-		"era": "Iron Era",
+		"era": "Iron era",
 		"techCost": 105,
 		"buildingCost": 100,
 		"wonderCost": 250,
@@ -166,7 +166,7 @@
 	},
 	{
 		"columnNumber": 5,
-		"era": "Iron Era",
+		"era": "Iron era",
 		"techCost": 145,
 		"buildingCost": 120,
 		"wonderCost": 275,
@@ -211,7 +211,7 @@
 	},
 	{
 		"columnNumber": 6,
-		"era": "Iron Era",
+		"era": "Iron era",
 		"techCost": 175,
 		"buildingCost": 120,
 		"wonderCost": 300,
@@ -250,7 +250,7 @@
 	},
 	{
 		"columnNumber": 7,
-		"era": "Nether Era",
+		"era": "Nether era",
 		"techCost": 230,
 		"buildingCost": 160,
 		"wonderCost": 400,
@@ -313,7 +313,7 @@
 	},
 	{
 		"columnNumber": 8,
-		"era": "Nether Era",
+		"era": "Nether era",
 		"techCost": 295,
 		"buildingCost": 180,
 		"wonderCost": 450,
@@ -352,7 +352,7 @@
 	},
 	{
 		"columnNumber": 8,
-		"era": "Nether Era",
+		"era": "Nether era",
 		"techCost": 385,
 		"buildingCost": 210,
 		"wonderCost": 550,
@@ -391,7 +391,7 @@
 	},
 	{
 		"columnNumber": 9,
-		"era": "Ender Era",
+		"era": "Ender era",
 		"techCost": 500,
 		"buildingCost": 300,
 		"wonderCost": 700,
@@ -430,7 +430,7 @@
 	},
 	{
 		"columnNumber": 10,
-		"era": "Ender Era",
+		"era": "Ender era",
 		"techCost": 750,
 		"buildingCost": 500,
 		"wonderCost": 850,
