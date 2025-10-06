@@ -388,6 +388,59 @@
 				"quote": ""
 			}
 		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Ender Era",
+		"techCost": 500,
+		"buildingCost": 300,
+		"wonderCost": 700,
+		"techs": [
+			{
+				"name": "Brewing",
+				"row": 4,
+				"prerequisites": ["Discipline","Depth ruins"],
+				"quote": ""
+			},
+			{
+				"name": "Stronghold",
+				"row": 5,
+				"prerequisites": ["Depth ruins"],
+				"quote": ""
+			},
+			{
+				"name": "Physics",
+				"row": 6,
+				"prerequisites": ["Civil Engineering","Nether Highway"],
+				"quote": ""
+			},
+			{
+				"name": "Market",
+				"row": 8,
+				"prerequisites": ["Jurisprudence","Trade"],
+				"quote": ""
+			},
+			{
+				"name": "Purging",
+				"row": 10,
+				"prerequisites": ["Expedition"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 10,
+		"era": "Ender Era",
+		"techCost": 750,
+		"buildingCost": 500,
+		"wonderCost": 850,
+		"techs": [
+			{
+				"name": "The End",
+				"row": 5,
+				"prerequisites": ["Brewing","Stronghold","Physics","Market","Purging"],
+				"quote": ""
+			}
+		]
 	}
-	
 ]
