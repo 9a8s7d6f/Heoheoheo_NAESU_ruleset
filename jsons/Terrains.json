@@ -1,10 +1,58 @@
 [
 	{
-		"name": "Grassland",
+		"name": "Plains",
 		"type": "Land",
 		"food": 2,
 		"movementCost": 1,
         "RGB": [0, 163, 0],
         "uniques": []
-    }
+    },
+	{
+		"name": "Taiga",
+		"type": "Land",
+		"food": 1,
+		"production": 1,
+		"movementCost": 1,
+        "RGB": [124, 62, 57],
+        "uniques": []
+    },
+	{
+		"name": "Snow",
+		"type": "Land",
+		"food": 2,
+		"movementCost": 1,
+        "RGB": [0, 163, 0],
+        "uniques": []
+    },
+	{
+		"name": "Savanna",
+		"type": "Land",
+		"food": 2,
+		"movementCost": 1,
+        "RGB": [0, 163, 0],
+        "uniques": []
+	},
+	{
+		"name": "Desert",
+		"type": "Land",
+		"food": 2,
+		"movementCost": 1,
+        "RGB": [0, 163, 0],
+        "uniques": []
+	},
+	{
+		"name": "Badlands",
+		"type": "Land",
+		"food": 2,
+		"movementCost": 1,
+        "RGB": [0, 163, 0],
+        "uniques": []
+	},
+	{
+		"name": "Ice Sea",
+		"type": "Land",
+		"movementCost": 1,
+        "RGB": [0, 163, 0],
+        "uniques": []
+	},
 ]
