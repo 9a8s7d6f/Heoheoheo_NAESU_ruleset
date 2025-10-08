@@ -50,21 +50,14 @@
         "uniques": []
 	},
 	{
-		"name": "Ice Sea",
-		"type": "Land",
-		"movementCost": 1,
-        "RGB": [230, 238, 255],
-        "uniques": []
-	},
-	{
-		"name": "Ocean",
+		"name": "Deep Ocean",
 		"type": "Water",
 		"food": 1,
 		"movementCost": 1,
 		"RGB": [43, 87, 151]
 	},
 	{
-		"name": "Coast",
+		"name": "Ocean",
 		"type": "Water",
 		"food": 1,
         "gold": 1,
@@ -73,6 +66,27 @@
 		"uniques": ["[+2] to Fertility for Map Generation",
             "Considered [Desirable] when determining start locations <on water maps>",
             "Every [60] tiles with this terrain will receive a major deposit of a strategic resource."]
+	},
+	{
+		"name": "Frozen Ocean",
+		"type": "Land",
+		"movementCost": 1,
+        "RGB": [230, 238, 255],
+        "uniques": []
+	},
+	{
+		"name": "Mushroom Fields",
+		"type": "Land",
+		"production": 1,
+		"food": 1,
+		"gold": 1,
+		"defenceBonus": -0.15,
+		"uniques": [
+			"Rare feature",
+			"Must be adjacent to [6] [Water] tiles",
+			"[-8] to Fertility for Map Generation",
+			"Every [9] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
 	},
 	// Terrain features
 	{
@@ -84,17 +98,19 @@
 		"defenceBonus": 0.25,
 		"RGB": [105,125,72],
 		"occursOn": ["Tundra","Plains","Desert","Snow"],
-		"uniques": ["Rough terrain",
-					"[+1] Strength for cities built on this terrain",
-					"Has an elevation of [1] for visibility calculations",
-					"Occurs in groups around high elevations",
-					"[+1] to Fertility for Map Generation",
-					"A Region is formed with at least [40]% [Hill] tiles, with priority [5]",
-					"Base Terrain on this tile is not counted for Region determination",
-					"Starts in regions of this type receive an extra [Sheep]",
-					"Considered [Desirable] when determining start locations",
-					"Considered [Production] when determining start locations",
-					"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."]
+		"uniques": [
+			"Rough terrain",
+			"[+1] Strength for cities built on this terrain",
+			"Has an elevation of [1] for visibility calculations",
+			"Occurs in groups around high elevations",
+			"[+1] to Fertility for Map Generation",
+			"A Region is formed with at least [40]% [Hill] tiles, with priority [5]",
+			"Base Terrain on this tile is not counted for Region determination",
+			"Starts in regions of this type receive an extra [Sheep]",
+			"Considered [Desirable] when determining start locations",
+			"Considered [Production] when determining start locations",
+			"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."
+		]
 	},
 	{
 		"name": "Slopes",
@@ -320,5 +336,42 @@
 			"Every [9] tiles with this terrain will receive a major deposit of a strategic resource."
 		],
 		"civilopediaText": [{"text":"Only Polders can be built here", "link":"Improvement/Polder"}]
+	},
+	{
+		"name": "Mangrove Swamp",
+		"type": "TerrainFeature",
+		"production": 1,
+		"movementCost": 3,
+		"unbuildable": true,
+		"defenceBonus": -0.15,
+		"occursOn": ["Swamp"],
+		"uniques": [
+			"Rare feature",
+			"[-5] to Fertility for Map Generation",
+			"Every [9] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [{"text":"Only Polders can be built here", "link":"Improvement/Polder"}]
+	},
+	{
+		"name": "Cold Ocean",
+		"type": "TerrainFeature",
+		"food": -1,
+        "gold": 1,
+		"movementCost": 1,
+		"occursOn": ["Deep Ocean","Ocean"],
+		"uniques": [
+			"[+0] to Fertility for Map Generation"
+		]
+	},
+	{
+		"name": "Warm Ocean",
+		"type": "TerrainFeature",
+		"food": 1,
+        "gold": 2,
+		"movementCost": 1,
+		"occursOn": ["Ocean"],
+		"uniques": [
+			"[-2] to Fertility for Map Generation"
+		]
 	},
 ]
