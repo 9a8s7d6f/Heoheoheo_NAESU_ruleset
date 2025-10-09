@@ -77,9 +77,10 @@
 	{
 		"name": "Mushroom Fields",
 		"type": "Land",
-		"production": 1,
-		"food": 1,
-		"gold": 1,
+		"production": 2,
+		"food": 2,
+		"gold": 2,
+		"culture": 2,
 		"defenceBonus": -0.15,
 		"uniques": [
 			"Rare feature",
@@ -371,7 +372,29 @@
 		"movementCost": 1,
 		"occursOn": ["Ocean"],
 		"uniques": [
-			"[-2] to Fertility for Map Generation"
+			"[-3] to Fertility for Map Generation"
 		]
 	},
+	{
+		"name": "Small Islands",
+		"type": "TerrainFeature",
+		"movementCost": 1,
+		"food": 1,
+		"production": 1,
+		"occursOn": ["Ocean"],
+		"uniques": [
+			"[-1] to Fertility for Map Generation"
+		]
+	},
+	{
+		"name": "Big Islands",
+		"type": "TerrainFeature",
+		"movementCost": 1,
+		"food": 2,
+		"production": 2,
+		"occursOn": ["Ocean"],
+		"uniques": [
+			"[-3] to Fertility for Map Generation"
+		]
+	}
 ]
