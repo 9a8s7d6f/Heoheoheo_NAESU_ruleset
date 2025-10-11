@@ -1,21 +1,62 @@
 [
-
+	{
+		"name": "Wooden house"
+		"terrainsCanBeBuiltOn": ["Plains","Savanna","Desert","Badlands","Frozen Ocean","Tundra","Snow","Mushroom Fields","Slopes"],
+		"production": 1,
+		"food": 1,
+		"gold": 1,
+		"turnsToBuild": 4,
+		"techRequired": "Wooden Architecture",
+		"uniques": ["Obsolete with [Construction]"]
+	},
+	{
+		"name": "Stone house"
+		"terrainsCanBeBuiltOn": ["Plains","Savanna","Desert","Badlands","Frozen Ocean","Tundra","Snow","Mushroom Fields","Slopes"],
+		"production": 1,
+		"food": 1,
+		"gold": 2,
+		"turnsToBuild": 6,
+		"techRequired": "Construction",
+		"uniques": ["Obsolete with [Civil Engineering]"]
+	},
+	{
+		"name": "Brick house"
+		"terrainsCanBeBuiltOn": ["Plains","Savanna","Desert","Badlands","Frozen Ocean","Tundra","Snow","Mushroom Fields"],
+		"production": 2,
+		"food": 1,
+		"gold": 2,
+		"turnsToBuild": 7,
+		"techRequired": "Civil Engineering",
+		"uniques": ["Obsolete with [tech]"]
+	},
 	{
 		"name": "Farm",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
-		"food": 1,
+		"terrainsCanBeBuiltOn": ["Plains","Tundra","Savanna","Flood plains","Mushroom Fields"],
+		"food": 2,
+		"turnsToBuild": 5,
+		"techRequired": "Agriculture",
+		"uniques": [
+			"Can also be built on tiles adjacent to fresh water",
+			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
+			"Can only be built on [Farm] tiles <before discovering [Waterway]>",
+            "Pillaging this improvement yields approximately [+18 Gold]"
+			],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Multifloor farm",
+		"terrainsCanBeBuiltOn": ["Plains","Tundra","Savanna","Flood plains","Mushroom Fields"],
+		"food": 4,
 		"turnsToBuild": 7,
 		"techRequired": "Agriculture",
 		"uniques": ["Can also be built on tiles adjacent to fresh water",
 			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
-			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
-            "Pillaging this improvement yields approximately [+18 Gold]"],
-		"shortcutKey": "F"
+            "Pillaging this improvement yields approximately [+36 Gold]"]
 	},
 	{
 		"name": "Lumber mill",
 		"terrainsCanBeBuiltOn": ["Forest"],
-		"production": 1,
+		"production": 2,
 		"turnsToBuild": 7,
 		"techRequired": "Construction",
 		"uniques": ["[+1 Production] <after discovering [Scientific Theory]>", "Pillaging this improvement yields approximately [+10 Gold]"],
@@ -24,7 +65,7 @@
 	{
 		"name": "Mine",
 		"terrainsCanBeBuiltOn": ["Hill"],
-		"production": 1,
+		"production": 2,
 		"turnsToBuild": 7,
 		"techRequired": "Mining",
 		"uniques": ["[+1 Production] <after discovering [Chemistry]>", "Pillaging this improvement yields approximately [+20 Gold]"],
