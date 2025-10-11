@@ -1,18 +1,520 @@
 [
-    {
-        "name": "Settler",
-        "unitType": "Civilian",
-        "movement": 2,
-        "uniques": ["Founds a new city <by consuming this unit>","Requires at least [2] population"]
-    },
-    {
-		"name": "Rifleman",
-		"unitType": "Infantry",
+	// 서버 사람들
+	{
+		"name": "Mo bidick",
+		"unitType": "Civilian",
+		"civilopediaText": [
+			{"text": "그는 매우 게으르고 충성심이 하나도 없는 노동자이지만, 건물 건설 하나만큼은 기깔난다."}
+		],
+		"movement": 3,
+		"uniques": [
+			"Can build [Land] improvements on tiles",
+			"Automation is a primary action",
+			"Can build [All] improvements at a [+30]% rate <when number of [Happiness] is more than [-5]>",
+			"Can build [All] improvements at a [-30]% rate <when number of [Happiness] is less than [-5]>",
+			"Can speed up construction of a building"
+		],
+		"cost": 27
+	},
+	{
+		"name": "Monakho",
+		"unitType": "Scout",
+		"replaces": "Settler",
+		"civilopediaText": [
+			{"text": "모낙호는 언제나 탐험을 하고싶어한다. 그치만 몸이 물몸이여서 어딜가든 뒤져버린다."}
+		],
+		"movement": 3,
+		"strength": 4,
+		"cost": 120,
+		"requiredTech": "The Wheel",
+		"uniques": [
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Founds a new city <by consuming this unit>",
+			"Requires at least [3] population",
+			"Unable to capture cities",
+			"[-50]% XP gained from combat"
+		],
+		"attackSound": "nonmetalhit"
+	},
+
+	// 마크
+	{
+		"name": "Wooden Sword Warrior",
+		"unitType": "Naesu Sword",
 		"movement": 2,
 		"strength": 5,
-        "range": 2,
-		"rangedStrength": 7,
+		"cost": 15,
+		"obsoleteTech": "Mining",
+		"upgradesTo": "Stone Sword Warrior",
+		"uniques": ["May upgrade to [Stone Sword Warrior] through ruins-like effects"],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+			{"text": "미약한 무장."}
+		]
+	},
+	{
+		"name": "Stone Sword Warrior",
+		"unitType": "Naesu Sword",
+		"movement": 2,
+		"strength": 9,
 		"cost": 40,
-		"attackSound": "shot"
+		"requiredTech": "Mining",
+		"obsoleteTech": "Iron Working",
+		"upgradesTo": "Iron Swordsman",
+		"uniques": ["May upgrade to [Iron Swordsman] through ruins-like effects"],
+		"attackSound": "nonmetalhit",
+		"promotions": ["Shock I"],
+        "civilopediaText": [
+			{"text": "기초적인 무장."}
+		]
+	},
+	{
+		"name": "Iron Swordsman",
+		"unitType": "Naesu Sword",
+		"movement": 2,
+		"strength": 14,
+		"cost": 80,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Diamond Swordsman",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit",
+		"promotions": ["Shock I", "Drill I"],
+		"civilopediaText": [
+			{"text": "일반적인 무장."}
+		]
+	},
+	{
+		"name": "Diamond Swordsman",
+		"unitType": "Naesu Sword",
+		"movement": 2,
+		"strength": 21,
+		"cost": 140,
+		"requiredTech": "Steel",
+		"obsoleteTech": "Gunpowder",
+		"upgradesTo": "Netherite Swordsman",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit",
+		"promotions": ["Shock I", "Drill I", "Cover I"],
+		"civilopediaText": [
+			{"text": "값비싼 무장."}
+		]
+	},
+	{
+		"name": "Netherite Swordsman",
+		"unitType": "Naesu Sword",
+		"movement": 2,
+		"strength": 25,
+		"cost": 162,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"attackSound": "metalhit"
+		"promotions": ["Shock I", "Drill I", "Cover I"],
+		"civilopediaText": [
+			{"text": "가장 강력하고 완전적인 무장."}
+		]
+	},
+	{
+		"name": "Shieldman",
+		"unitType": "Shilder",
+		"movement": 2,
+		"strength": 11,
+		"cost": 46,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "중갑병",
+		"uniques": ["[-50]% Strength <when attacking>", "[+50]% Strength <when defending>"],
+		"attackSound": "nonmetalhit"
+		"promotions": ["Cover I"],
+		"civilopediaText": [
+			{"text": "방패를 앞세워서 적의 공격을 막는다."}
+		]
+	},
+	{
+		"name": "중갑병",
+		"unitType": "Shilder",
+		"movement": 2,
+		"strength": 16,
+		"cost": 80,
+		"requiredTech": "Civil Service",
+		"upgradesTo": "Lancer",
+		"uniques": ["[-66]% Strength <when attacking>", "[+75]% Strength <when defending>"],
+		"attackSound": "metalhit"
+		"promotions": ["Cover I", "Cover II"],
+		"civilopediaText": [
+			{"text": "무거운 방패와 전신 갑옷으로 적의 공격을 막는다."}
+		]
+	},
+	{
+		"name": "도끼병",
+		"unitType": "Naesu Sword",
+		"movement": 2,
+		"strength": 11,
+		"cost": 56,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"uniques": [
+			"[+10]% Strength <when attacking>",
+			"[-10]% Strength <when defending>",
+			"[+50]% Strength <vs [Shilder] units>"
+		],
+		"attackSound": "metalhit"
+		"civilopediaText": [
+			{"text": "도끼는 무겁고 강하다."}
+		]
+	},
+	{
+		"name": "다이아몬드 도끼병",
+		"unitType": "Naesu Sword",
+		"movement": 2,
+		"strength": 16,
+		"cost": 90,
+		"requiredTech": "Civil Service",
+		"obsoleteTech": "Metallurgy",
+		"uniques": [
+			"[+10]% Strength <when attacking>",
+			"[-10]% Strength <when defending>",
+			"[+50]% Strength <vs [Shilder] units>"
+		],
+		"attackSound": "metalhit"
+		"civilopediaText": [
+			{"text": "이 도끼는 무겁고 더 강하다."}
+		]
+	},
+	{
+		"name": "Toxophilite",
+		"unitType": "Naesu Bowman",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 7,
+		"cost": 50,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Construction",
+		"upgradesTo": "Composite Bowman",
+		"uniques": ["[3] Range <when stacked with a [Mo bidick] unit>"],
+		"attackSound": "arrow"
+		"civilopediaText": [
+			{"text": "저 는활 을쏠거 에요"}
+		]
+	},
+	{
+		"name": "Arbalist",
+		"unitType": "Naesu Crossbowman",
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 16,
+		"cost": 120,
+		"requiredTech": "Machinery",
+		"upgradesTo": "Gatling Gun",
+		"obsoleteTech": "Industrialization",
+		"attackSound": "crossbow"
+		"uniques": ["[3] Range <when stacked with a [Mo bidick] unit>"],
+		"civilopediaText": [
+			{"text": "저 는석 궁을 쏠거에 요"}
+		]
+	},
+	{
+		"name": "해피 가스트",
+		"unitType": "Blimp",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 5,
+		"range": 1,
+		"cost": 80,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"obsoleteTech": "Chivalry",
+		"upgradesTo": "가스트 활공병",
+		"attackSound": "arrow"
+		"uniques": [
+			"[+10]% Strength <vs [Melee] units> <when attacking>",
+			"[+50]% Strength <vs [Melee] units> <when defending>",
+			"No defensive terrain bonus",
+			"All tiles cost 1 movement",
+			"Ignores Zone of Control",
+			"Unable to capture cities",
+			"No defensive terrain penalty",
+			"[3] Sight",
+			"[+1] Sight <in tiles not adjacent to [Mountain] tiles>",
+			"[+1] Movement <when above [30] HP>"
+		],
+	},
+	{
+		"name": "가스트 활공병",
+		"unitType": "Blimp",
+		"movement": 3,
+		"strength": 20,
+		"rangedStrength": 9,
+		"range": 1,
+		"cost": 125,
+		"requiredTech": "Chivalry",
+		"requiredResource": "Horses",
+		"attackSound": "arrow"
+		"uniques": [
+			"[+10]% Strength <vs [Melee] units> <when attacking>",
+			"[+50]% Strength <vs [Melee] units> <when defending>",
+			"No defensive terrain bonus",
+			"All tiles cost 1 movement",
+			"Ignores Zone of Control",
+			"Unable to capture cities",
+			"No defensive terrain penalty",
+			"[3] Sight",
+			"[+1] Sight <in tiles not adjacent to [Mountain] tiles>",
+			"[+1] Movement <when above [30] HP>"
+		],
+	},
+	{
+		"name": "수영병",
+		"unitType": "Naesu Melee Water",
+		"movement": 1,
+		"strength": 5,
+		"cost": 15,
+		"upgradesTo": "보트병",
+		"obsoleteTech": "Sailing",
+		"attackSound": "nonmetalhit"
+		"promotions": ["Landing Party"],
+		"uniques": [
+			"[+20]% Strength <when fighting in [Coast] tiles>",
+			"Cannot enter ocean tiles",
+			"Unavailable <if [RekMOD] is enabled>"
+			],
+		"civilopediaText": [
+			{"text": "어푸어푸"}
+		],
+	},
+	{
+		"name": "보트병",
+		"unitType": "Naesu Melee Water",
+		"movement": 3,
+		"strength": 10,
+		"cost": 35,
+		"requiredTech": "Sailing",
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+		"promotions": ["Landing Party"],
+		"uniques": [
+			"Cannot enter ocean tiles",
+			"Never appears as a Barbarian unit",
+			"[+20]% Strength <when fighting in [Coast] tiles>",
+			"Unavailable <if [RekMOD] is enabled>"
+			],
+		"civilopediaText": [
+			{"text": "노젓기"}
+		],
+	},
+	{
+        "name": "철골렘",
+        "unitType": "Sword",
+        "movement": 2,
+        "strength": 30,
+        "cost": 64,
+        "requiredTech": "Metal Casting",
+        "uniques": [
+            "Consumes [4] [Iron]",
+            "Unable to pillage tiles",
+            "[-50]% Strength <when number of [Iron] is between [-99] and [0]>",
+            "[-30]% Strength <when number of [Iron] is between [1] and [2]>",
+            "[-10]% Strength <when number of [Iron] is between [3] and [4]>",
+            "[+10]% Strength <when number of [Iron] is between [5] and [6]>",
+
+            "[+100]% maintenance costs <when number of [Iron] is between [-99] and [0]>",
+            "[+50]% maintenance costs <when number of [Iron] is between [1] and [2]>",
+            "[+0]% maintenance costs <when number of [Iron] is more than [2]>",
+			
+            "[+100]% Strength <vs [Barbarians] units>",
+            "[+20]% Strength <when defending>"
+        ],
+        "attackSound": "nonmetalhit"
+        "promotions": ["Cover I", "Cover II"],
+        "civilopediaText": [
+            {"text": "강력한 수호 골렘"}
+        ]
+    },
+	//Ranged Water
+	{
+		"name": "허허허53식 화차",
+		"unitType": "Naesu Siege",
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 8,
+		"cost": 70,
+		"requiredTech": "Trapping",
+		"obsoleteTech": "Physics",
+		"upgradesTo": "모나코53식 대포",
+		"uniques": [
+			"[+200]% Strength <vs cities> <when attacking>",
+			"[+50]% Strength <vs cities> <when defending>",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+		"civilopediaText": [
+			{"text": "설명"}
+		],
+	},
+	{
+		"name": "모나코53식 대포",
+		"unitType": "Naesu Siege",
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 13,
+		"cost": 105,
+		"requiredTech": "Physics",
+		"obsoleteTech": "Chemistry",
+		"upgradesTo": "Cannon",
+		"uniques": [
+			"[+250]% Strength <vs cities> <when attacking>",
+			"[+50]% Strength <vs cities> <when defending>",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Never appears as a Barbarian unit",
+			"[+50]% Strength <vs [Non-City]> <after discovering [Chivalry]>"
+		],
+		"attackSound": "cannon"
+		"civilopediaText": [
+			{"text": "설명"}
+		],
+	},
+	{
+		"name": "피스톤 전투기",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 14,
+		"rangedStrength": 14,
+		"range": 3,
+		"cost": 85,
+		"requiredTech": "Machinery",
+		"upgradesTo": "Triplane",
+		"interceptRange": 3,
+		"uniques": [
+			"[50]% chance to intercept air attacks",
+			"[+150]% Strength <vs [Bomber] units>",
+			"[+50]% Strength <vs [Helicopter] units>",
+			"[+200]% Strength <vs [Blimp] units>"
+		]
+		"attackSound": "arrow"
+	},
+	{
+		"name": "피스톤 폭격기",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 17,
+		"rangedStrength": 17,
+		"range": 4,
+		"cost": 95,
+		"requiredTech": "Machinery",
+		"upgradesTo": "Great War Bomber",
+		"uniques": [
+			"[50]% chance to intercept air attacks",
+			"[+150]% Strength <vs [Bomber] units>",
+			"[+50]% Strength <vs [Helicopter] units>",
+			"[+200]% Strength <vs [Blimp] units>"
+		]
+		"attackSound": "bombing"
+	},
+	{
+		"name": "항공 지상함",
+		"unitType": "LandCarrier",
+		"uniqueTo": "Eastern Roman Empire",
+		"movement": 2,
+		"strength": 20,
+		"cost": 105,
+		"requiredTech": "Metallurgy",
+		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
+	},
+	
+	// 테오도시아나 고유유닛
+	
+	{
+		"name": "True Monakho",
+		"unitType": "Sword",
+		"uniqueTo": "Theodosiana Free State",
+		"replaces": "Monakho",
+		"civilopediaText": [
+			{"text": "모낙호는 언제나 탐험을 하고싶어한다. 그치만 몸이 물몸이여서 어딜가든 뒤져버린다."}
+		],
+		"movement": 4,
+		"strength": 15,
+		"hurryCostModifier": 50,
+		"cost": 130,
+		"uniques": [
+			"Founds a new city <once>",
+			"Requires at least [2] population",
+			"[+100]% production cost <when below [-10] [Happiness]>",
+			"[+10]% to Flank Attack bonuses",
+			"[+30]% Strength <when below [30] HP>",
+			"[+1] Movement <when below [60] HP>",
+			"[+1] Movement <when below [30] HP>",
+			"All tiles cost 1 movement"
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "TNT",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Theodosiana Free State",
+		"civilopediaText": [
+			{"text": "이것도 너프해 보시지!"}
+		],
+		"movement": 4,
+		"strength": 70,
+		"rangedStrength": 70,
+		"range": 1,
+		"cost": 100,
+		"hurryCostModifier": -50,
+		"requiredTech": "Mathematics",
+		"uniques": [
+			"Self-destructs when attacking",
+			"No defensive terrain bonus",
+			"No defensive terrain penalty",
+			"[+100]% Strength <when attacking>",
+			"Unable to capture cities",
+			"[-100]% XP gained from combat",
+			"[-75]% Strength <vs cities>",
+			"[+1] Movement <upon being promoted>",
+		],
+		"attackSound": "tankshot"
+	},
+
+	// 모비딕폴리스 고유유닛
+
+
+	// 알제사무소
+	{
+		"name": "스파이",
+		"unitType": "Civilian",
+		"uniqueTo": "Alje Office Autonomous Branch",
+		"movement": 2,
+		"promotions": ["Ignore terrain cost"],
+		"cost": 75
+		"uniques": [
+			"Invisible to others",
+			"May enter foreign tiles without open borders",
+			"[1] Sight <when not at war>",
+			"[3] Sight <when at war>"
+		],
+	},
+	//Great Person
+
+	{
+		"name": "Great Worker",
+		"unitType": "Civilian",
+		"movement": 2
+		"uniques": [
+			"Can speed up construction of a building",
+            "Can instantly construct a [Manufactory] improvement <once>",
+            "Is part of Great Person group [Great Person]",
+            "Great Person - [Worker]",
+			"Unbuildable",
+			"Uncapturable",
+			"Can build [Land] improvements on tiles",
+			"Can build [Water] improvements on tiles",
+			"Automation is a primary action"
+		],
 	}
+
 ]
