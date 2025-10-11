@@ -1,0 +1,376 @@
+[
+	// 동로마 고유 건물
+	{
+		"name": "Aya Sofya",
+		"uniqueTo": "Eastern Roman Empire",
+		"cost": 1453,
+		"happiness": 4,
+		"culture": 4,
+		"science": 4,
+		"specialistSlots": {"Artist": 2},
+		"requiredTech": "Construction",
+		"specialistSlots": {"Workman": 1},
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"[-10]% production cost <after discovering [Bronze Working]>",
+			"[-10]% production cost <after discovering [Iron Working]>",
+			"[-10]% production cost <after discovering [Mathematics]>",
+			"[-10]% production cost <after discovering [Engineering]>",
+			"[-10]% production cost <after discovering [Horseback Riding]>",
+			"[-10]% production cost <after discovering [Calendar]>",
+			"[-10]% production cost <after discovering [Writing]>",
+			"[-10]% production cost <after discovering [Philosophy]>",
+			"[-10]% production cost <after discovering [Drama and Poetry]>",
+			"Free Social Policy",
+			"Triggers a global alert upon completion"],
+		"quote": "ㅊㅋ"
+		"civilopediaText": [
+			{"text": "섬록암으로 만들어진 동로마제국의 랜드마크!"}
+		]
+	},
+	{
+		"name": "Heoheoheodevil"
+		"uniqueTo": "Eastern Roman Empire",
+		"uniques": [
+			"Unbuildable",
+			"Shown while unbuilable",
+			"Destroyed when the city is captured",
+			"Cannot be purchased",
+			"All newly-trained [Military] units [in this city] receive the [허허허의 노예정신] promotion"
+		]
+	},
+	{
+		"name": "Storehouse",
+		"replaces": "Granary",
+		"uniqueTo": "Eastern Roman Empire",
+		"civilopediaText": [
+			{"text": "모비딕이한땀한땀정성스레만든목재창고를불태운모낙호가다시한땀한땀정성스레보수한목재창고@@@@@@@@@"}
+		],
+		"specialistSlots": {"Workman": 2},
+		"cost": 60,
+		"food": 2,
+		"production": 2,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"requiredTech": "Pottery",
+		"uniques": [
+			"[+1 Food] from [Deer] tiles [in this city]",
+			"[+1 Food] from [Bananas] tiles [in this city]",
+			"[+2 Food] from [Wheat] tiles [in this city]",
+			"[+2 Production] from [Stone] tiles [in this city]",
+			"[+1 Production] from [Mine] tiles [in this city]",
+			"Obsolete with [Agriculture] <while researching [Printing Press]>"
+		]
+	},
+	{
+		"name": "Cross",
+		"replaces": "Monument",
+		"uniqueTo": "Eastern Roman Empire",
+		"culture": 3,
+		"faith": 1,
+		"cost": 40,
+		"hurryCostModifier": 40,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"],
+		"civilopediaText": [
+			{"text": "블록 6개로도 만들 수 있음"}
+		]
+	},
+	{
+        "name": "Mobidick_statue",
+        "uniqueTo": "Eastern Roman Empire",
+        "cost": 60,
+        "culture": 5,
+        "production": 2,
+        "science": 1,
+        "requiredTech": "Bronze Working",
+        "uniques": [
+            "[+1 Production] from [Mine] tiles [in this city]",
+            "[+2 Science] from [Marble] tiles [in this city]",
+            "[+1] Happiness from each type of luxury resource"
+		]
+	},
+	{
+		"name": "Alje office",
+		"uniqueTo": "Eastern Roman Empire",
+		"cost": 10,
+		"production": 1,
+		"specialistSlots": {"Workman": 1},
+		"requiredTech": "Agriculture",
+		"uniques": ["[+4 Production, +2 Food] [in this city] <in cities with less than [4] [Population]>"],
+		"civilopediaText": [
+			{"text": "초반에는 쓸데있지만 후반에는 쓸데없음"}
+		]
+	},
+	{
+		"name": "Potato hydroponics plantation",
+		"uniqueTo": "Eastern Roman Empire",
+		"food": 2,
+		"gold": 1,
+		"percentStatBonus": {"food": 15},
+		"cost": 80,
+		"hurryCostModifier": 10,
+		"maintenance": 2,
+		"requiredTech": "Engineering",
+		"uniques": [
+			"[20]% Food is carried over after population increases [in this city]",
+			"[+1 Food] from [Farm] tiles [in this city]"
+			],
+		"civilopediaText": [
+			{"text": "3층짜리 감자농장"}
+		]
+	},
+	{
+		"name": "Enderman farm",
+		"uniqueTo": "Eastern Roman Empire",
+		"replaces": "Armory",
+		"cost": 160,
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredBuilding": "Barracks",
+		"uniques": ["New [Military] units start with [30] XP [in this city]", "Destroyed when the city is captured"],
+		"requiredTech": "Steel",
+		"civilopediaText": [
+			{"text": "30레벨 될 때까지 나올생각 마시오"}
+		]
+	},
+	{
+		"name": "주민슈비츠",
+		"uniqueTo": "Eastern Roman Empire",
+		"replaces": "Market",
+		"cost": 120,
+		"gold": 3,
+		"food": 1,
+		"science": 1,
+		"happiness": -1,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"gold": 25},
+		"requiredTech": "Currency"
+		"uniques": [
+			"Limited to [5] per Civilization",
+			"Provides [1] [Iron] <upon entering the [Renaissance era]>",
+			"[+20]% Production when constructing [Land] units [in all cities]"
+		],
+		"civilopediaText": [
+			{"text": "주민슈비츠 설명"}
+		]
+	},
+	{
+		"name": "대리석 법원",
+		"uniqueTo": "Eastern Roman Empire",
+		"replaces": "Courthouse",
+		"maintenance": 3,
+		"cost": 120,
+		"culture": 2,
+		"hurryCostModifier": 60,
+		"requiredTech": "Mathematics"
+		"uniques": [
+			"Removes extra unhappiness from annexed cities",
+			"[-15]% Unhappiness from [Population] [in this city]",
+			"[+2 Culture, +1 Faith] [in this city] <upon adopting [Tradition Complete]>",
+			"[+1 Culture, +1 Happiness] [in this city] <upon adopting [Liberty Complete]>"
+		],
+		"civilopediaText": [
+			{"text": "대리석 법원 설명"}
+		]
+	},
+	{
+		"name": "지도방",
+		"uniqueTo": "Eastern Roman Empire",
+		"maintenance": 1,
+		"cost": 80,
+		"hurryCostModifier": 75,
+		"requiredTech": "Writing"
+		"uniques": [
+			"Can only be built <in [in capital] cities>",
+			"Reveal up to [all] [All] within a [6] tile radius",
+			"Reveal up to [all] [All] within a [8] tile radius <after discovering [Optics]>",
+			"Reveal up to [all] [All] within a [16] tile radius <after discovering [Compass]>",
+			"Reveal up to [all] [All] within a [32] tile radius <after discovering [Navigation]>"
+		]
+	},
+	{
+		"name": "몬스터 타워",
+		"uniqueTo": "Eastern Roman Empire",
+		"maintenance": 1,
+		"cost": 240,
+		"hurryCostModifier": 50,
+		"production": 2,
+		"gold": 2,
+		"requiredTech": "Machinery"
+	},
+	{
+		"name": "섬록암 피라미드",
+		"uniqueTo": "Eastern Roman Empire",
+		"replaces": "Amphitheater",
+		"culture": 4,
+		"percentStatBonus": {"faith": 20},
+		"percentStatBonus": {"culture": 10},
+		"specialistSlots": {"Artist": 1},
+		"requiredBuilding": "Cross",
+		"maintenance": 2,
+		"hurryCostModifier": 10,
+		"requiredTech": "Theology"
+	}
+	
+	// 테오도시아나 고유 건물
+	{
+		"name": "테오도시아나 기념비",
+		"uniqueTo": "Theodosiana Free State",
+		"cost": 70,
+		"hurryCostModifier": 25,
+		"requiredTech": "Pottery",
+		"gold": 3,
+		"production": 3,
+		"science": 3,
+		"percentStatBonus": {"production": 10},
+		"percentStatBonus": {"science": 10},
+		"uniques": [
+			"[-10]% Unhappiness from [Population] [in all cities]",
+			"Can only be built <in [in capital] cities>",
+			"Reveal up to [all] [Land] within a [8] tile radius <after discovering [Optics]>"
+			]
+	},
+	{
+		"name": "대농장구",
+		"uniqueTo": "Theodosiana Free State",
+		"cost": 90,
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"specialistSlots": {"Workman": 1},
+		"requiredBuilding": "Granary",
+		"requiredTech": "Calendar",
+		"food": 2,
+		"uniques": ["Must have an owned [Grassland] within [1] tiles", "Must not be on [Hill]", "[+1 Food] from [Farm] tiles [in this city]", "[+1 Gold] from [Farm] tiles [in this city]"]
+	},
+	{
+		"name": "크리퍼 공장",
+		"uniqueTo": "Theodosiana Free State",
+		"cost": 140,
+		"hurryCostModifier": 50,
+		"maintenance": 2,
+		"requiredTech": "Engineering",
+		"production": 3,
+		"uniques": [
+			"[+1 Gold, +1 Production] from all [Production] buildings",
+			"[+5]% Production when constructing [Melee] units [in this city]",
+			"[+5]% Production when constructing [Naesu Siege] units [in this city]",
+			"[+10]% Production when constructing [Siege] units [in this city]",
+			"[+20]% Production when constructing [Ranged Water] units [in this city]",
+			"[+20]% Production when constructing [Naesu Ranged Water] units [in this city]",
+			"[+25]% Production when constructing [Gunpowder] units [in this city]",
+			"[+25]% Production when constructing [Ranged Gunpowder] units [in this city]",
+			"[+25]% Production when constructing [Naesu Gunpowder] units [in this city]",
+			"[+25]% Production when constructing [Naesu Ranged Gunpowder] units [in this city]",
+			"[+25]% Production when constructing [Guided Missile] units [in this city]",
+			"[+3] Unit Supply"
+		]
+	},
+	{
+		"name": "주민공장",
+		"uniqueTo": "Theodosiana Free State",
+		"cost": 95,
+		"hurryCostModifier": 20,
+		"maintenance": 1,
+		"requiredTech": "Guilds",
+		"production": 1,
+		"food": 1,
+		"gold": 2,
+		"percentStatBonus": {"gold": 5},
+		"specialistSlots": {"Merchant": 1},
+		"uniques": [
+			"[+2 Gold] from every [Merchant]"
+		]
+	},
+	{
+		"name": "주민 플렌테이션",
+		"uniqueTo": "Theodosiana Free State",
+		"cost": 120,
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"requiredTech": "Civil Service",
+		"requiredBuilding": "주민공장",
+		"food": 1,
+		"percentStatBonus": {"food": 10},
+		"uniques": [
+			"[+2 Gold, +2 Food] from every [Farm]",
+			"[+2 Gold, +2 Food] from every [Plantation]",
+		]
+	},
+	{
+		"name": "유스티니아누스 야포",
+		"uniqueTo": "Theodosiana Free State",
+		"cost": 100,
+		"requiredTech": "Machinery",
+		"cityStrength": 15,
+		"hurryCostModifier": -25,
+		"uniques": ["Destroyed when the city is captured", "[+10]% Strength for cities <with a garrison>"]
+	},
+	{
+		"name": "모낙호 철도건설국",
+		"uniqueTo": "Theodosiana Free State",
+		"cost": 120,
+		"replaces": "Workshop",
+		"requiredTech": "Metal Casting",
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"production": 3,
+		"percentStatBonus": {"production": 10},
+		"specialistSlots": {"Engineer": 1},
+		"specialistSlots": {"Workman": 1},
+		"uniques": [
+			"Limited to [1] per Civilization",
+			"[-66]% maintenance on road & railroads",
+			"[-33]% construction time for [Road] improvements",
+			"[-66]% construction time for [Railroad] improvements",
+			"Consumes [1] [Iron]"
+		]
+	},
+	{
+		"name": "항전"
+		"uniqueTo": "Theodosiana Free State",
+		"cost": 50,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Unbuildable",
+			"Triggers a global alert upon build start",
+			"Destroyed when the city is captured",
+			"Cannot be purchased",
+			"All newly-trained [Military] units [in all cities] receive the [결사적 방어] promotion <when at war>",
+			"[+30]% Production when constructing [Military] units [in this city] <when at war>"
+		]
+	},
+	// 모비딕폴리스 고유 건물
+	{
+		"name": "비딕풍차",
+		"uniqueTo": "모비딕폴리스",
+		"replaces": "Windmill",
+		"cost": 235,
+		"requiredTech": "Economics"
+		"food": 2,
+		"production": 2,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"specialistSlots": {"Workman": 1},
+		"maintenance": 2,
+		"uniques": [
+			"Must not be on [Coastal]",
+			"[+10]% Production when constructing [All] buildings [in this city]",
+			"[+1 Food, +1 Gold, +1 Production] in cities on [Open terrain] tiles <after discovering [Dynamite]>"
+		],
+	},
+	{
+		"name": "Bidick castle",
+		"uniqueTo": "모비딕폴리스",
+		"replaces": "Castle",
+		"cost": 250,
+		"cityStrength": 9,
+		"cityHealth": 50,
+		"culture":2,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"requiredTech": "Chivalry",
+		"uniques": ["Destroyed when the city is captured", "[non-air] Units adjacent to this city heal [+5] HP per turn when healing"]
+	}
+]
