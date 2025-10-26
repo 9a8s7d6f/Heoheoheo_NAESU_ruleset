@@ -110,6 +110,7 @@
 		"requiredTech": "Gunpowder",
 		"upgradesTo": "Rifleman",
 		"attackSound": "metalhit"
+		"uniques": "[This Unit] gains the [Shock I] status for [3] turn(s)"
 		"promotions": ["Shock I", "Drill I", "Cover I"],
 		"civilopediaText": [
 			{"text": "가장 강력하고 완전적인 무장."}
