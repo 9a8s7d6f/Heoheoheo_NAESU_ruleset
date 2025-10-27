@@ -35,7 +35,7 @@
 		"food": 1,
 		"gold": 2,
 		"turnsToBuild": 7,
-		"techRequired": "Civil Engineering",
+		"techRequired": "Engineering",
 		"uniques": [
 			"Can only be built on [Stone house] tiles",
 			"Obsolete with [Vertical Architecture]",
@@ -44,18 +44,32 @@
 		]
 	},
 	{
-		"name": "Extended city"
+		"name": "Outskirts"
 		"terrainsCanBeBuiltOn": ["Plains","Savanna","Desert","Badlands","Frozen Ocean","Tundra","Snow","Mushroom Fields"],
 		"production": 2,
 		"food": 2,
 		"gold": 2,
 		"turnsToBuild": 10,
+		"techRequired": "Civil Engineering",
+		"uniques": [
+			"Can only be built on [Brick house] tiles",
+			"Obsolete with [tech]",
+			"Gives a defensive bonus of [+20]%"
+		]
+	},
+	{
+		"name": "Extended city"
+		"terrainsCanBeBuiltOn": ["Plains","Savanna","Desert","Badlands","Frozen Ocean","Tundra","Snow","Mushroom Fields"],
+		"production": 3,
+		"food": 3,
+		"gold": 3,
+		"turnsToBuild": 15,
 		"techRequired": "Vertical Architecture",
 		"uniques": [
 			"Can only be built on [Brick house] tiles",
 			"Ensures a minimum tile yield of [+2 Food, +1 Production]",
 			"Obsolete with [tech]",
-			"Gives a defensive bonus of [+25]%"
+			"Gives a defensive bonus of [+30]%"
 		]
 	},
 	{
@@ -146,6 +160,13 @@
 		"uniques": ["[+1 Gold] <after discovering [Economics]>", "Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "T"
 	},
+	{
+		"name": "Pasture",
+		"turnsToBuild": 8,
+		"techRequired": "Animal Husbandry",
+		"uniques": ["[+1 Food] <after discovering [Fertilizer]>","Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "P"
+	},
 
 	// Resource-specific
 	{
@@ -167,13 +188,6 @@
 		"turnsToBuild": 1,  // Allows this to be constructed for city-states
 		"techRequired": "Refrigeration",
 		"uniques": ["Can only be built to improve a resource", "Can only be built on [Water] tiles", "Pillaging this improvement yields approximately [+20 Gold]"],
-		"shortcutKey": "P"
-	},
-	{
-		"name": "Pasture",
-		"turnsToBuild": 8,
-		"techRequired": "Animal Husbandry",
-		"uniques": ["[+1 Food] <after discovering [Fertilizer]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "P"
 	},
 	{
