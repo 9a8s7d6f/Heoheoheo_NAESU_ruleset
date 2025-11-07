@@ -2,9 +2,9 @@
 	{
 		"columnNumber": 0,
 		"era": "Beginning era",
-		"techCost": 10,
-		"buildingCost": 40,
-		"wonderCost": 185,
+		"techCost": 8,
+		"buildingCost": 30,
+		"wonderCost": 150,
 		"techs": [
 			{
 				"name": "Mine",
@@ -23,8 +23,8 @@
 	{
 		"columnNumber": 1,
 		"era": "Beginning era",
-		"techCost": 25,
-		"buildingCost": 60,
+		"techCost": 15,
+		"buildingCost": 40,
 		"wonderCost": 185,
 		"techs": [
 			{
@@ -45,13 +45,13 @@
 		"columnNumber": 2,
 		"era": "Beginning era",
 		"techCost": 35,
-		"buildingCost": 75,
+		"buildingCost": 60,
 		"wonderCost": 185,
 		"techs": [
 			{
 				"name": "Coal Mining",
 				"row": 4,
-				"prerequisites": ["Agriculture"],
+				"prerequisites": ["Stone Instrument"],
 				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
 			},
 			{
@@ -78,20 +78,14 @@
 				"prerequisites": ["Craft","Stone Instrument"],
 				"quote": ""
 			},
-			{
-				"name": "Boat",
-				"row": 10,
-				"prerequisites": ["Craft"],
-				"quote": ""
-			}
 		]
 	},
 	{
 		"columnNumber": 3,
 		"era": "Beginning era",
-		"techCost": 55,
-		"buildingCost": 80,
-		"wonderCost": 200,
+		"techCost": 45,
+		"buildingCost": 70,
+		"wonderCost": 185,
 		"techs": [
 			{
 				"name": "Basic Iron",
@@ -106,9 +100,15 @@
 				"quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4"
 			},
 			{
-				"name": "Animal Husbandry",
-				"row": 7,
-				"prerequisites": ["Wooden Architecture"],
+				"name": "Build",
+				"row": 6,
+				"prerequisites": ["Masonry", "Wooden Architecture"],
+				"quote": ""
+			},
+			{
+				"name": "Boat",
+				"row": 10,
+				"prerequisites": ["Exploration"],
 				"quote": ""
 			}
 		]
@@ -116,9 +116,9 @@
 	{
 		"columnNumber": 4,
 		"era": "Iron era",
-		"techCost": 105,
-		"buildingCost": 100,
-		"wonderCost": 250,
+		"techCost": 60,
+		"buildingCost": 80,
+		"wonderCost": 200,
 		"techs": [
 			{
 				"name": "Shilder",
@@ -133,7 +133,7 @@
 				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
 			},
 			{
-				"name": "Metal Casting",
+				"name": "Furnace",
 				"row": 5,
 				"prerequisites": ["Torch"],
 				"quote": "'When pieces of bronze or gold or iron break, the metal-smith welds them together again in the fire, and the bond is established.' - Sri Guru Granth Sahib"
@@ -141,25 +141,25 @@
 			{
 				"name": "Construction",
 				"row": 6,
-				"prerequisites": ["Basic Iron","Masonry"],
+				"prerequisites": ["Basic Iron","Masonry","Torch"],
 				"quote": "'Three things are to be looked to in a building: that it stands on the right spot; that it be securely founded; that it be successfully executed.' - Johann Wolfgang von Goethe"
 			},
 			{
-				"name": "Waterway",
-				"row": 8,
+				"name": "Animal Husbandry",
+				"row": 7,
 				"prerequisites": ["Basic Iron","Agriculture"],
 				"quote": "'국가를 다스리는 것은, 물을 다스리는 것이다.' - 한자 다스릴 치의 유래"
 			},
 			{
-				"name": "Archery",
-				"row": 9,
+				"name": "Waterway",
+				"row": 8,
 				"prerequisites": ["Hunting"],
 				"quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop"
 			},
 			{
 				"name": "Pioneer",
 				"row": 10,
-				"prerequisites": ["Basic Iron","Boat"],
+				"prerequisites": ["Basic Iron","Boat","Torch"],
 				"quote": "'세상은 한 권의 책이다. 여행하지 않는 사람은 그 책에서 단지 한 페이지밖에 읽지 못한다.' - 성 아우구스티누스"
 			}
 		]
@@ -167,20 +167,20 @@
 	{
 		"columnNumber": 5,
 		"era": "Iron era",
-		"techCost": 145,
-		"buildingCost": 120,
-		"wonderCost": 275,
+		"techCost": 105,
+		"buildingCost": 100,
+		"wonderCost": 250,
 		"techs": [
 			{
 				"name": "Armor",
 				"row": 2,
-				"prerequisites": ["Shilder"],
+				"prerequisites": ["Shilder","Iron Technology"],
 				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
 			},
 			{
 				"name": "Advanced Mining",
 				"row": 4,
-				"prerequisites": ["Iron Technology"],
+				"prerequisites": ["Iron Technology","Furnace"],
 				"quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4"
 			},
 			{
@@ -190,21 +190,21 @@
 				"quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon"
 			},
 			{
-				"name": "Horseback Riding",
-				"row": 7,
-				"prerequisites": ["Animal Husbandry","Iron Technology"],
-				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
-			},
-			{
 				"name": "Canal",
 				"row": 8,
 				"prerequisites": ["Waterway"],
 				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
 			},
 			{
-				"name": "Papermaking",
+				"name": "Archery",
+				"row": 8,
+				"prerequisites": ["Hunting","Animal Husbandry"],
+				"quote": "'A Horse! A Horse! My kingdom for a horse!' - Shakespeare (Richard III)"
+			},
+			{
+				"name": "Sugar Cane",
 				"row": 9,
-				"prerequisites": ["Waterway"],
+				"prerequisites": ["Waterway","Pioneer"],
 				"quote": "'어느 땐 종이에 글을 쓰다보면, 조각하고 있다는 생각이 들 때가 있다' - 빅토르 위고"
 			}
 		]
@@ -212,38 +212,32 @@
 	{
 		"columnNumber": 6,
 		"era": "Iron era",
-		"techCost": 175,
-		"buildingCost": 120,
-		"wonderCost": 300,
+		"techCost": 130,
+		"buildingCost": 100,
+		"wonderCost": 250,
 		"techs": [
-			{
-				"name": "Lapis Lazuli",
-				"row": 4,
-				"prerequisites": ["Advanced Mining"],
-				"quote": ""
-			},
 			{
 				"name": "Diamond",
 				"row": 5,
-				"prerequisites": ["Advanced Mining","Metal Casting"],
+				"prerequisites": ["Advanced Mining"],
 				"quote": ""
 			},
 			{
 				"name": "Redstone",
 				"row": 6,
-				"prerequisites": ["Advanced Mining"],
+				"prerequisites": ["Advanced Mining","Mathematics"],
 				"quote": ""
 			},
 			{
-				"name": "Engineering",
-				"row": 8,
-				"prerequisites": ["Wooden Architecture"],
+				"name": "Horseback Riding",
+				"row": 7,
+				"prerequisites": ["Animal Husbandry"],
 				"quote": ""
 			},
 			{
-				"name": "Crossbow",
-				"row": 10,
-				"prerequisites": ["Wooden Architecture"],
+				"name": "Papermaking",
+				"row": 9,
+				"prerequisites": ["Sugar Cane","Archery"],
 				"quote": ""
 			}
 		]
@@ -251,9 +245,9 @@
 	{
 		"columnNumber": 7,
 		"era": "Nether era",
-		"techCost": 230,
-		"buildingCost": 160,
-		"wonderCost": 400,
+		"techCost": 175,
+		"buildingCost": 120,
+		"wonderCost": 250,
 		"techs": [
 			{
 				"name": "Advanced Armor",
@@ -268,9 +262,9 @@
 				"quote": ""
 			},
 			{
-				"name": "Enchanting",
+				"name": "Lapis Lazuli",
 				"row": 4,
-				"prerequisites": ["Lapis Lazuli","Diamond"],
+				"prerequisites": ["Advanced Mining"],
 				"quote": ""
 			},
 			{
@@ -280,33 +274,27 @@
 				"quote": ""
 			},
 			{
-				"name": "Machinery",
+				"name": "Surf Railway",
 				"row": 6,
 				"prerequisites": ["Redstone"],
 				"quote": ""
 			},
 			{
-				"name": "Roads & Rails",
-				"row": 7,
-				"prerequisites": ["Redstone","Engineering"],
-				"quote": ""
-			},
-			{
-				"name": "Civil Service",
+				"name": "Engineering",
 				"row": 8,
-				"prerequisites": ["Engineering","Papermaking"],
+				"prerequisites": ["Redstone","Canal"],
 				"quote": ""
 			},
 			{
-				"name": "Records and Comedy",
+				"name": "Archival Records",
 				"row": 9,
 				"prerequisites": ["Papermaking"],
 				"quote": ""
 			},
 			{
-				"name": "Shipbuilding",
+				"name": "Subjugation",
 				"row": 10,
-				"prerequisites": ["Crossbow"],
+				"prerequisites": ["Sugar Cane","Horseback Riding"],
 				"quote": ""
 			}
 		]
@@ -314,122 +302,111 @@
 	{
 		"columnNumber": 8,
 		"era": "Nether era",
-		"techCost": 295,
-		"buildingCost": 180,
-		"wonderCost": 450,
+		"techCost": 200,
+		"buildingCost": 125,
+		"wonderCost": 270,
 		"techs": [
 			{
-				"name": "Discipline",
-				"row": 4,
-				"prerequisites": ["Advanced Tools","Enchanting"],
-				"quote": ""
-			},
-			{
-				"name": "Civil Engineering",
+				"name": "Railway",
 				"row": 6,
-				"prerequisites": ["Machinery","Civil Service"],
+				"prerequisites": ["Surf Railway","Engineering"],
 				"quote": ""
 			},
 			{
-				"name": "Trade",
-				"row": 8,
-				"prerequisites": ["Civil Service"],
-				"quote": ""
-			},
-			{
-				"name": "Theology",
-				"row": 9,
-				"prerequisites": ["Records and Comedy"],
-				"quote": ""
-			},
-			{
-				"name": "Expedition",
-				"row": 10,
-				"prerequisites": ["Records and Comedy","Shipbuilding"],
-				"quote": ""
-			}
-		]
-	},
-	{
-		"columnNumber": 8,
-		"era": "Nether era",
-		"techCost": 385,
-		"buildingCost": 210,
-		"wonderCost": 550,
-		"techs": [
-			{
-				"name": "Debris Excavation",
-				"row": 2,
-				"prerequisites": ["Advanced Tools","Advanced Armor"],
-				"quote": ""
-			},
-			{
-				"name": "Trident",
-				"row": 3,
-				"prerequisites": ["Advanced Armor","Discipline","Theology"],
-				"quote": ""
-			},
-			{
-				"name": "Depth ruins",
-				"row": 5,
-				"prerequisites": ["Nether"],
-				"quote": ""
-			},
-			{
-				"name": "Nether Highway",
+				"name": "Chivalry",
 				"row": 7,
-				"prerequisites": ["Nether","Roads & Rails","Expedition"],
+				"prerequisites": ["Advanced Armor","Horseback Riding"],
 				"quote": ""
 			},
 			{
-				"name": "Jurisprudence",
+				"name": "Judgement",
 				"row": 9,
-				"prerequisites": ["Theology","Expedition"],
+				"prerequisites": ["Archival Records","Subjugation"],
 				"quote": ""
 			}
 		]
 	},
 	{
 		"columnNumber": 9,
-		"era": "Ender era",
-		"techCost": 500,
-		"buildingCost": 300,
-		"wonderCost": 700,
+		"era": "Nether era",
+		"techCost": 250,
+		"buildingCost": 130,
+		"wonderCost": 300,
 		"techs": [
 			{
-				"name": "Brewing",
+				"name": "Improved Tactics",
+				"row": 2,
+				"prerequisites": ["Advanced Armor"],
+				"quote": ""
+			},
+			{
+				"name": "Improved Mining",
+				"row": 3,
+				"prerequisites": ["Advanced Tools"],
+				"quote": ""
+			},
+			{
+				"name": "Storehouse",
 				"row": 4,
-				"prerequisites": ["Discipline","Depth ruins"],
+				"prerequisites": ["Lapis Lazuli","Railway"],
 				"quote": ""
 			},
 			{
-				"name": "Stronghold",
-				"row": 5,
-				"prerequisites": ["Depth ruins"],
-				"quote": ""
-			},
-			{
-				"name": "Physics",
+				"name": "Nether Highway",
 				"row": 6,
-				"prerequisites": ["Civil Engineering","Nether Highway"],
+				"prerequisites": ["Nether","Railway","Expedition"],
 				"quote": ""
 			},
 			{
-				"name": "Market",
+				"name": "Machinery",
 				"row": 8,
-				"prerequisites": ["Jurisprudence","Trade"],
+				"prerequisites": ["Theology","Expedition"],
 				"quote": ""
 			},
 			{
-				"name": "Purging",
+				"name": "Expedition",
 				"row": 10,
-				"prerequisites": ["Expedition"],
+				"prerequisites": ["Chivalry","Subjugation"],
 				"quote": ""
 			}
 		]
 	},
 	{
 		"columnNumber": 10,
+		"era": "Nether era",
+		"techCost": 300,
+		"buildingCost": 140,
+		"wonderCost": 350,
+		"techs": [
+			{
+				"name": "Magical Books",
+				"row": 4,
+				"prerequisites": ["Storehouse"],
+				"quote": ""
+			},
+			{
+				"name": "Depth Ruins",
+				"row": 5,
+				"prerequisites": ["Nether","Expedition"],
+				"quote": ""
+			},
+			{
+				"name": "Civil Engineering",
+				"row": 7,
+				"prerequisites": ["Nether Highway","Chivalry","Machinery"],
+				"quote": ""
+			},
+			{
+				"name": "Belief",
+				"row": 9,
+				"prerequisites": ["Judgement","Expedition"],
+				"quote": ""
+			}
+		]
+		-----------------------------------//*
+	},
+	{
+		"columnNumber": 11,
 		"era": "Ender era",
 		"techCost": 620,
 		"buildingCost": 400,
@@ -474,7 +451,7 @@
 		]
 	},
 	{
-		"columnNumber": 11,
+		"columnNumber": 12,
 		"era": "Ender era",
 		"techCost": 750,
 		"buildingCost": 500,
