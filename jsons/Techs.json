@@ -178,7 +178,7 @@
 				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
 			},
 			{
-				"name": "Advanced Mining",
+				"name": "Highlevel Mining",
 				"row": 4,
 				"prerequisites": ["Iron Technology","Furnace"],
 				"quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4"
@@ -219,13 +219,13 @@
 			{
 				"name": "Diamond",
 				"row": 5,
-				"prerequisites": ["Advanced Mining"],
+				"prerequisites": ["Highlevel Mining"],
 				"quote": ""
 			},
 			{
 				"name": "Redstone",
 				"row": 6,
-				"prerequisites": ["Advanced Mining","Mathematics"],
+				"prerequisites": ["Highlevel Mining","Mathematics"],
 				"quote": ""
 			},
 			{
@@ -264,7 +264,7 @@
 			{
 				"name": "Lapis Lazuli",
 				"row": 4,
-				"prerequisites": ["Advanced Mining"],
+				"prerequisites": ["Highlevel Mining"],
 				"quote": ""
 			},
 			{
@@ -403,49 +403,54 @@
 				"quote": ""
 			}
 		]
-		-----------------------------------//*
 	},
 	{
 		"columnNumber": 11,
 		"era": "Ender era",
-		"techCost": 620,
-		"buildingCost": 400,
-		"wonderCost": 800,
+		"techCost": 485,
+		"buildingCost": 180,
+		"wonderCost": 400,
 		"techs": [
 			{
-				"name": "Smelting",
+				"name": "Sapper",
 				"row": 2,
-				"prerequisites": ["Debris Excavation","Brewing"],
+				"prerequisites": ["Improved Tactics","Improved Mining","Civil Engineering"],
 				"quote": ""
 			},
 			{
-				"name": "Tipped Arrow",
+				"name": "Deep Mining",
 				"row": 3,
-				"prerequisites": ["Trident","Brewing"],
+				"prerequisites": ["Magical Books","Improved Mining"],
 				"quote": ""
 			},
 			{
-				"name": "Vertical Architecture",
-				"row": 6,
-				"prerequisites": ["Physics"],
+				"name": "Ender Pearl",
+				"row": 5,
+				"prerequisites": ["Magical Books","Depth Ruins"],
 				"quote": ""
 			},
 			{
-				"name": "Cavalry",
+				"name": "Central Administration",
 				"row": 7,
-				"prerequisites": ["Nether Highway"],
+				"prerequisites": ["Belief","Civil Engineering"],
 				"quote": ""
 			},
 			{
-				"name": "Local Politics",
+				"name": "Piston",
+				"row": 8,
+				"prerequisites": ["Machinery"],
+				"quote": ""
+			},
+			{
+				"name": "Comedy",
 				"row": 9,
-				"prerequisites": ["Jurisprudence","Purging"],
+				"prerequisites": ["Belief"],
 				"quote": ""
 			},
 			{
-				"name": "Archeology",
+				"name": "Crusades",
 				"row": 10,
-				"prerequisites": ["Purging"],
+				"prerequisites": ["Belief","Expedition"],
 				"quote": ""
 			}
 		]
@@ -453,14 +458,122 @@
 	{
 		"columnNumber": 12,
 		"era": "Ender era",
-		"techCost": 750,
-		"buildingCost": 500,
-		"wonderCost": 1000,
+		"techCost": 780,
+		"buildingCost": 250,
+		"wonderCost": 600,
 		"techs": [
 			{
 				"name": "The End",
 				"row": 5,
-				"prerequisites": ["Smelting","Tipped Arrow","Brewing","Stronghold","Vertical Architecture","Cavalry","Market","Local Politics","Archeology"],
+				"prerequisites": ["Sapper","Deep Mining","Ender Pearl","Central Administration","Piston","Comedy","Crusades"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 13,
+		"era": "Ender era",
+		"techCost": 980,
+		"buildingCost": 280,
+		"wonderCost": 600,
+		"techs": [
+			{
+				"name": "Ender City",
+				"row": 5,
+				"prerequisites": ["The End"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 14,
+		"era": "Post-ender era",
+		"techCost": 1200,
+		"buildingCost": 330,
+		"wonderCost": 700,
+		"techs": [
+			{
+				"name": "Enchant",
+				"row": 3,
+				"prerequisites": ["Ender City"],
+				"quote": ""
+			},
+			{
+				"name": "Shulker Box",
+				"row": 6,
+				"prerequisites": ["Ender City"],
+				"quote": ""
+			},
+			{
+				"name": "Rail Transport",
+				"row": 8,
+				"prerequisites": ["Ender City"],
+				"quote": ""
+			},
+			{
+				"name": "Trade"
+				"row": 9,
+				"prerequisites": ["Ender City"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 15,
+		"era": "Post-ender era",
+		"techCost": 1500,
+		"buildingCost": 400,
+		"wonderCost": 850,
+		"techs": [
+			{
+				"name": "Local Development",
+				"row": 5,
+				"prerequisites": ["Ender City"],
+				"quote": ""
+			},
+			{
+				"name": "Hopper",
+				"row": 6,
+				"prerequisites": ["Shulker Box"],
+				"quote": ""
+			},
+			{
+				"name": "Market",
+				"row": 9,
+				"prerequisites": ["Trade"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 16,
+		"era": "Post-ender era",
+		"techCost": 1800,
+		"buildingCost": 500,
+		"wonderCost": 1200,
+		"techs": [
+			{
+				"name": "Improved Mining",
+				"row": 3,
+				"prerequisites": ["Local Development","Enchant"],
+				"quote": ""
+			},
+			{
+				"name": "Improved Logging",
+				"row": 4,
+				"prerequisites": ["Local Development","Enchant"],
+				"quote": ""
+			},
+			{
+				"name": "Automated Machine",
+				"row": 7,
+				"prerequisites": ["Local Development","Hopper","Rail Transport"],
+				"quote": ""
+			},
+			{
+				"name": "Interdimensional Transport",
+				"row": 10,
+				"prerequisites": ["Local Development","Rail Transport"],
 				"quote": ""
 			}
 		]
