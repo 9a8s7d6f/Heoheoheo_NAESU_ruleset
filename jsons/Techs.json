@@ -581,7 +581,7 @@
 	{
 		"columnNumber": 17,
 		"era": "Post-ender era",
-		"techCost": 1800,
+		"techCost": 2200,
 		"buildingCost": 500,
 		"wonderCost": 1200,
 		"techs": [
@@ -604,7 +604,7 @@
 				"quote": ""
 			},
 			{
-				"name": "Classification",
+				"name": "Casting",
 				"row": 6,
 				"prerequisites": ["Automated Machine","Enhanced Logging"],
 				"quote": ""
@@ -623,4 +623,56 @@
 			}
 		]
 	},
+	{
+		"columnNumber": 18,
+		"era": "Discovery era",
+		"techCost": 2600,
+		"buildingCost": 500,
+		"wonderCost": 1200,
+		"techs": [
+			{
+				"name": "Theology",
+				"row": 2,
+				"prerequisites": ["Discipline","Quarrying"],
+				"quote": ""
+			},
+			{
+				"name": "Brewing",
+				"row": 4,
+				"prerequisites": ["Nether Wart"],
+				"quote": ""
+			},
+			{
+				"name": "Crossbow",
+				"row": 6,
+				"prerequisites": ["Casting"],
+				"quote": ""
+			},
+			{
+				"name": "Secondary Crop",
+				"row": 7,
+				"prerequisites": ["Automated Machine"],
+				"quote": ""
+			},
+			{
+				"name": "Mending",
+				"row": 8,
+				"prerequisites": ["Transaction"],
+				"quote": ""
+			},
+			{
+				"name": "Colonies",
+				"row": 9,
+				"prerequisites": ["Shipbuilding","Transaction"],
+				"quote": ""
+			},
+			{
+				"name": "Overland",
+				"row": 10,
+				"prerequisites": ["Shipbuilding"],
+				"quote": ""
+			}
+		]
+	},
+	
 ]
