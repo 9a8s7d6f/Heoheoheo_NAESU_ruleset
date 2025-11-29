@@ -627,8 +627,8 @@
 		"columnNumber": 18,
 		"era": "Discovery era",
 		"techCost": 2600,
-		"buildingCost": 500,
-		"wonderCost": 1200,
+		"buildingCost": 550,
+		"wonderCost": 1400,
 		"techs": [
 			{
 				"name": "Theology",
@@ -670,6 +670,96 @@
 				"name": "Overland",
 				"row": 10,
 				"prerequisites": ["Shipbuilding"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 19,
+		"era": "Discovery era",
+		"techCost": 2900,
+		"buildingCost": 650,
+		"wonderCost": 1700,
+		"techs": [
+			{
+				"name": "Trident",
+				"row": 2,
+				"prerequisites": ["Theology","Crossbow"],
+				"quote": ""
+			},
+			{
+				"name": "Snow Removal",
+				"row": 3,
+				"prerequisites": ["Quarrying"],
+				"quote": ""
+			},
+			{
+				"name": "Local Administration",
+				"row": 5,
+				"prerequisites": ["Local Development"],
+				"quote": ""
+			},
+			{
+				"name": "Tower",
+				"row": 6,
+				"prerequisites": ["Crossbow"],
+				"quote": ""
+			},
+			{
+				"name": "Market Control",
+				"row": 8,
+				"prerequisites": ["Mending"],
+				"quote": ""
+			},
+			{
+				"name": "Plantation",
+				"row": 9,
+				"prerequisites": ["Secondary Crop","Colonies"],
+				"quote": ""
+			},
+			{
+				"name": "Railway Department",
+				"row": 10,
+				"prerequisites": ["Overland","Colonies"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 20,
+		"era": "Discovery era",
+		"techCost": 3250,
+		"buildingCost": 800,
+		"wonderCost": 2000,
+		"techs": [
+			{
+				"name": "Strengthened Equipment",
+				"row": 2,
+				"prerequisites": ["Trident","Local Administration","Market Control"],
+				"quote": ""
+			},
+			{
+				"name": "Nether Mining",
+				"row": 4,
+				"prerequisites": ["Snow Removal","Local Administration","Brewing"],
+				"quote": ""
+			},
+			{
+				"name": "Cultural Religion",
+				"row": 5,
+				"prerequisites": ["Local Administration"],
+				"quote": ""
+			},
+			{
+				"name": "Exchange Rate",
+				"row": 7,
+				"prerequisites": ["Local Administration","Market Control"],
+				"quote": ""
+			},
+			{
+				"name": "Distant Market",
+				"row": 9,
+				"prerequisites": ["Market Control","Plantation","Railway Department"],
 				"quote": ""
 			}
 		]
