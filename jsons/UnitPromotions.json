@@ -1,0 +1,592 @@
+[
+	//특수
+	{
+		"name": "허허허의 노예정신",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+  	},
+    {
+		"name": "노예군",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+  	},
+    {
+		"name": "형벌 부대",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+  	},
+    {
+		"name": "성전사",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+  	},
+    {
+		"name": "소년병",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+  	},
+  	{
+        "name": "결사적 방어",
+        "uniques": [
+            "[-30]% Strength <when fighting in [Enemy Land] tiles>",
+            "[-30]% Strength <when fighting in [Enemy Land] tiles> <when attacking>",
+        	"[+15]% Strength <when fighting in [Friendly Land] tiles>",
+        	"[+30]% Strength <when fighting in [your] tiles>",
+			"[+15]% Strength <when fighting in [your] tiles> <when defending>",
+        	"All healing effects doubled <in [your] tiles> <when below [15] HP>",
+			"[+1] Movement <in [your] tiles>"
+        ]
+	},
+	{
+		"name": "불사의 토템",
+    	"uniques": [
+			"[This Unit] heals [100] HP <once> <upon being defeated>",
+			"[This Unit] heals [80] HP <once> <when below [20] HP>",
+			"[This Unit] heals [60] HP <[3] times> <upon losing at least [3] HP in a single attack>"
+		]
+	},
+	{
+		"name": "승전보 I"
+		"uniques": [
+			"Heals [20] damage if it kills a unit"
+		]
+	},
+    //지정
+    {
+		"name": "대열 집중",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+        "unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+    },
+    {
+		"name": "난전 유도",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+        "unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+    },
+    {
+		"name": "게릴라전",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+        "unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+    },
+    {
+		"name": "교착 유지",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+        "unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+    },
+    {
+		"name": "지원 사격",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+        "unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+  	},
+    {
+		"name": "초계",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+        "unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+  	},
+    {
+		"name": "습격",
+        "uniques": [
+          "No damage penalty for wounded units",
+          "[+10]% Strength",
+          "[+10]% Strength <vs [Non-City]>"
+		]
+        "unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+  	},
+  
+	//내수 활
+	{
+		"name": "힘 I",
+		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>", "[-90]% weight to this choice for AI decisions"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 27,
+        "row": 1,
+		"civilopediaText": [
+			{"text": "데미지를 높여 평지에서의 전투에서 유리한 조건을 점한다."}
+		],
+    },
+	{
+		"name": "힘 II",
+		"prerequisites": ["힘 I"],
+		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 27,
+        "row": 2,
+		"civilopediaText": [
+			{"text": "데미지를 높여 평지에서의 전투에서 유리한 조건을 점한다."}
+		],
+    },
+	{
+		"name": "힘 III",
+		"prerequisites": ["힘 II"],
+		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 27,
+        "row": 3,
+		"civilopediaText": [
+			{"text": "데미지를 높여 평지에서의 전투에서 유리한 조건을 점한다."}
+		],
+    },
+	{
+		"name": "힘 IV",
+		"prerequisites": ["힘 III"],
+		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 27,
+        "row": 4,
+		"civilopediaText": [
+			{"text": "데미지를 높여 평지에서의 전투에서 유리한 조건을 점한다."}
+		],
+    },
+	{
+		"name": "힘 V",
+		"prerequisites": ["힘 IV"],
+		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 27,
+        "row": 5,
+		"civilopediaText": [
+			{"text": "데미지를 높여 평지에서의 전투에서 유리한 조건을 점한다."}
+		],
+    },
+	{
+		"name": "밀어내기 I",
+		"uniques": ["[+10]% Strength <when fighting in [Rough terrain] tiles> <when attacking>", "[-90]% weight to this choice for AI decisions"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 28,
+        "row": 1,
+		"civilopediaText": [
+			{"text": "더 강한 넉백으로 험지에서 낙하피해를 유도한다."}
+		],
+    },
+	{
+		"name": "밀어내기 II",
+		"prerequisites": ["밀어내기 I"],
+		"uniques": ["[+10]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 28,
+        "row": 2,
+		"civilopediaText": [
+			{"text": "더 강한 넉백으로 험지에서 낙하피해를 유도한다."}
+		],
+    },
+	{
+		"name": "밀어내기 III",
+		"prerequisites": ["밀어내기 II"],
+		"uniques": ["[+10]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 28,
+        "row": 3,
+		"civilopediaText": [
+			{"text": "더 강한 넉백으로 험지에서 낙하피해를 유도한다."}
+		],
+    },
+	{
+		"name": "밀어내기 IV",
+		"prerequisites": ["밀어내기 III"],
+		"uniques": ["[+10]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 28,
+        "row": 4,
+		"civilopediaText": [
+			{"text": "더 강한 넉백으로 험지에서 낙하피해를 유도한다."}
+		],
+    },
+	{
+		"name": "밀어내기 V",
+		"prerequisites": ["밀어내기 IV"],
+		"uniques": ["[+10]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "column": 28,
+        "row": 5,
+		"civilopediaText": [
+			{"text": "더 강한 넉백으로 험지에서 낙하피해를 유도한다."}
+		],
+    },
+	{
+		"name": "폭발",
+		"prerequisites": ["Accuracy I","Barrage I"],
+		"uniques": ["[+50]% Strength <vs cities>"],
+		"unitTypes": ["Naesu Siege"],
+        "column": 29,
+        "row": 1
+	},
+	{
+		"name": "범위 연장",
+		"prerequisites": ["힘 IV","밀어내기 IV","대형 II","포격 II"],
+		"uniques": ["[+1] Range"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Siege","Ranged Water","Naesu Gunpowder","Naesu Ranged Gunpowder"],
+        "column": 29,
+        "row": 4
+	},
+	{
+		"name": "간접 사격",
+		"prerequisites": ["힘 IV","밀어내기 IV","대형 II","포격 II"],
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"unitTypes": ["Naesu Bowman","Naesu Crossbowman","Siege","Ranged Water","Naesu Gunpowder","Naesu Ranged Gunpowder"],
+        "column": 29,
+        "row": 5
+	},
+	//내수 검 공격
+	{
+		"name": "날카로움 I",
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>", "[-90]% weight to this choice for AI decisions"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+        "column": 30,
+        "row": 1
+	},
+	{
+		"name": "날카로움 II",
+		"prerequisites": ["날카로움 I"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+        "column": 30,
+        "row": 2
+	},
+	{
+		"name": "날카로움 III",
+		"prerequisites": ["날카로움 II"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+        "column": 30,
+        "row": 3
+	},
+	{
+		"name": "밀치기 I",
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>", "[-90]% weight to this choice for AI decisions"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+        "column": 31,
+        "row": 1
+	},
+	{
+		"name": "밀치기 II",
+		"prerequisites": ["밀치기 I"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+        "column": 31,
+        "row": 2
+	},
+	{
+		"name": "밀치기 III",
+		"prerequisites": ["밀치기 II"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+        "column": 31,
+        "row": 3
+	},
+	{
+		"name": "돌격",
+		"prerequisites": ["날카로움 II","밀치기 II"],
+		"uniques": ["[+33]% Strength <vs [Wounded] units>"],
+		"unitTypes": ["Naesu Mounted","Naesu Armored"],
+        "column": 32,
+        "row": 3
+	},
+	{
+		"name": "공성병",
+		"prerequisites": ["날카로움 II","밀치기 II"],
+		"uniques": ["[+50]% Strength <vs cities>"],
+		"unitTypes": ["Naesu Sword","Naesu Gunpowder"],
+        "column": 32,
+        "row": 4
+	},
+	{
+		"name": "전격전",
+		"prerequisites": ["날카로움 III","밀치기 III"],
+		"uniques": ["[1] additional attacks per turn"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Armored"],
+        "column": 32,
+        "row": 5
+	},
+	{
+		"name": "산림 방화",
+		"prerequisites": ["날카로움 III", "밀치기 III"],
+		"uniques": ["Double movement in [Forest]","Double movement in [Jungle]"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder"],
+        "column": 32,
+        "row": 6
+	},
+	{
+		"name": "회복 물약 수송대",
+		"prerequisites": ["날카로움 I", "밀치기 I"],
+		"uniques": ["All adjacent units heal [+5] HP when healing", "[+5] HP when healing", "[-50]% weight to this choice for AI decisions"],
+		"unitTypes": ["Naesu Sword","Naesu Gunpowder","Naesu Mounted"],
+        "column": 33,
+        "row": 1
+	},
+	{
+		"name": "황금사과 보급대",
+		"prerequisites": ["회복 물약 수송대"],
+		"uniques": ["All adjacent units heal [+5] HP when healing", "[+5] HP when healing"],
+		"unitTypes": ["Naesu Sword","Naesu Gunpowder","Naesu Mounted"],
+        "column": 33,
+        "row": 2
+	},
+	{
+		"name": "강타 I",
+		"uniques": ["[+50]% Strength <vs [Barbarians] units>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder"],
+        "column": 34,
+        "row": 1
+	},
+	{
+		"name": "강타 II",
+		"prerequisites": ["강타 I"],
+		"uniques": ["[+50]% Strength <vs [Barbarians] units>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder"],
+        "column": 34,
+        "row": 2
+	},
+	{
+		"name": "발화",
+		"prerequisites": ["날카로움 II","밀치기 II"],
+		"uniques": ["[+20]% Strength <when fighting in [{non-[Fresh Water]} {non-[Water]} {non-[non-fresh water]}] tiles>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted"],
+        "column": 34,
+        "row": 3
+	},
+	{
+		"name": "약탈 I",
+		"prerequisites": ["날카로움 II","밀치기 II"],
+		"uniques": ["No movement cost to pillage","[+10]% Health from pillaging tiles"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder"],
+        "column": 36,
+        "row": 2
+	},
+	{
+		"name": "약탈 II",
+		"prerequisites": ["약탈 I"],
+		"uniques": ["[+10]% Health from pillaging tiles", "Earn [5]% of killed [All] unit's [Cost] as [Gold]"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder"],
+        "column": 36,
+        "row": 3
+	},
+	// 내수 비화약 방어
+	{
+		"name": "보호 I",
+		"uniques": ["[+10]% Strength <when defending>", "[-90]% weight to this choice for AI decisions"],
+		"unitTypes": ["Naesu Sword","Naesu Bowman","Naesu Crossbowman","Naesu Mounted"],
+        "column": 37,
+        "row": 1
+	},
+	{
+		"name": "보호 II",
+		"prerequisites": ["보호 I"],
+		"uniques": ["[+10]% Strength <when defending>"],
+		"unitTypes": ["Naesu Sword","Naesu Bowman","Naesu Crossbowman","Naesu Mounted"],
+        "column": 37,
+        "row": 2
+	},
+	{
+		"name": "보호 III",
+		"prerequisites": ["보호 II"],
+		"uniques": ["[+10]% Strength <when defending>"],
+		"unitTypes": ["Naesu Sword","Naesu Bowman","Naesu Crossbowman","Naesu Mounted"],
+        "column": 37,
+        "row": 3
+	},
+	{
+		"name": "발사체로부터 보호 I",
+		"prerequisites": ["보호 I"],
+		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted"],
+        "column": 38,
+        "row": 1
+	},
+	{
+		"name": "발사체로부터 보호 II",
+		"prerequisites": ["발사체로부터 보호 I"],
+		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted"],
+        "column": 38,
+        "row": 2
+	},
+	{
+		"name": "발사체로부터 보호 III",
+		"prerequisites": ["발사체로부터 보호 II"],
+		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted"],
+        "column": 38,
+        "row": 3
+	},
+	{
+		"name": "가시 I",
+		"prerequisites": ["보호 I"],
+		"uniques": ["[+33]% Strength <vs [Mounted] units>", "[+33]% Strength <vs [Naesu Mounted] units>", "[-50]% weight to this choice for AI decisions"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted"],
+        "column": 39,
+        "row": 1
+	},
+	{
+		"name": "가시 II",
+		"prerequisites": ["가시 I"],
+		"uniques": ["[+33]% Strength <vs [Mounted] units>", "[+33]% Strength <vs [Naesu Mounted] units>"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted"],
+        "column": 39,
+        "row": 2
+	},
+	{
+		"name": "친수성",
+		"prerequisites": ["보호 I"],
+		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"],
+		"unitTypes": ["Naesu Sword"],
+        "column": 39,
+        "row": 3
+	},
+	//해상 근접
+	{
+		"name": "충각 I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Naesu Melee Water"],
+        "column": 40,
+        "row": 1
+	},
+	{
+		"name": "충각 II",
+		"prerequisites": ["충각 I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Naesu Melee Water"],
+        "column": 40,
+        "row": 2
+	},
+	{
+		"name": "충각 III",
+		"prerequisites": ["충각 II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Naesu Melee Water"],
+        "column": 40,
+        "row": 3
+	},
+	{
+		"name": "해안 습격",
+		"uniques": ["Eliminates combat penalty for attacking across a coast"],
+		"unitTypes": ["Naesu Melee Water"],
+        "column": 41,
+        "row": 1
+	},
+	//해상 원거리
+	{
+		"name": "대형 I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Naesu Ranged Water"],
+        "column": 42,
+        "row": 1
+	},
+	{
+		"name": "대형 II",
+		"prerequisites": ["대형 I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Naesu Ranged Water"],
+        "column": 42,
+        "row": 2
+	},
+	{
+		"name": "대형 III",
+		"prerequisites": ["대형 II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Naesu Ranged Water"],
+        "column": 42,
+        "row": 3
+	},
+	{
+		"name": "포격 I",
+		"uniques": ["[+15]% Strength <vs [Land] units>"],
+		"unitTypes": ["Naesu Ranged Water"],
+        "column": 43,
+        "row": 1
+	},
+	{
+		"name": "포격 II",
+		"prerequisites": ["포격 I"],
+		"uniques": ["[+15]% Strength <vs [Land] units>"],
+		"unitTypes": ["Naesu Ranged Water"],
+        "column": 43,
+        "row": 2
+	},
+	{
+		"name": "포격 III",
+		"prerequisites": ["포격 II"],
+		"uniques": ["[+15]% Strength <vs [Land] units>"],
+		"unitTypes": ["Naesu Ranged Water"],
+        "column": 43,
+        "row": 3
+	},
+	//내수 한정
+	{
+		"name": "무한",
+		"prerequisites": ["힘 II"],
+		"uniques": ["[-100]% maintenance costs"],
+		"unitTypes": ["Naesu Bowman"],
+        "column": 44,
+        "row": 1
+	},
+	{
+		"name": "관통",
+		"prerequisites": ["힘 II"],
+		"uniques": ["[+50]% Strength <vs [Shilder] units> <when attacking>"],
+		"unitTypes": ["Naesu Crossbowman"],
+        "column": 45,
+        "row": 1
+	},
+	//내수 공통
+	{
+		"name": "훈련 I",
+		"uniques": ["[+50]% XP gained from combat"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Ranged Gunpowder","Naesu Bowman","Naesu Crossbowman","Naesu Armored","Naesu Siege","Naesu Melee Water","Naesu Ranged Water","Blimp","Skycraft","Shilder"],
+        "column": 46,
+        "row": 1
+	},
+	{
+		"name": "훈련 II",
+		"prerequisites": ["훈련 I"],
+		"uniques": ["[+50]% XP gained from combat"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Ranged Gunpowder","Naesu Bowman","Naesu Crossbowman","Naesu Armored","Naesu Siege","Naesu Melee Water","Naesu Ranged Water","Blimp","Skycraft","Shilder"],
+        "column": 46,
+        "row": 2
+	},
+	{
+		"name": "훈련 III",
+		"prerequisites": ["훈련 II"],
+		"uniques": ["[+50]% XP gained from combat"],
+		"unitTypes": ["Naesu Sword","Naesu Mounted","Naesu Gunpowder","Naesu Ranged Gunpowder","Naesu Bowman","Naesu Crossbowman","Naesu Armored","Naesu Siege","Naesu Melee Water","Naesu Ranged Water","Blimp","Skycraft","Shilder"],
+        "column": 46,
+        "row": 3
+	}
+]
