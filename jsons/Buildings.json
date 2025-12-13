@@ -1,4 +1,56 @@
 [
+	{
+		"name": "Crafter",
+		"requiredTech": "Craft",
+		"production": 2,
+		"cost": 10,
+		"hurryCostModifier": 20,
+		"uniques": ["Unbuildable <after discovering [Pioneer]>","Unavailable <after discovering [Pioneer]>"],
+	},
+	{
+		"name": "Furnace",
+		"requiredTech": "Coal Mining",
+		"production": 3,
+		"food" : 1,
+		"cost": 25,
+		"hurryCostModifier": 20,
+		"uniques": ["Unbuildable <after discovering [Pioneer]>","Unavailable <after discovering [Pioneer]>"],
+	},
+	{
+		"name": "Basic Settle buildings",
+		"requiredTech": "Pioneer",
+		"production": 5,
+		"food" : 1,
+		"cost": 30,
+		"hurryCostModifier": 40,
+	},
+	{
+		"name": "Blast Furnace",
+		"requiredTech": "Coal Mining",
+		"production": 4,
+		"percentStatBonus": {"production": 15},
+		"maintenance": 1,
+		"cost": 60,
+		"hurryCostModifier": 20,
+		"requiredNearbyImprovedResources": ["Iron"],
+		"uniques": [
+			"[+1 Production] from [Iron] tiles [in this city]",
+			"[+1 Production] from [Cupper] tiles [in this city]",
+			"[+1 Production] from [Gold] tiles [in this city]"
+		],
+	},
+	{
+		"name": "Loom",
+		"requiredTech": "Animal Husbandry",
+		"production": 2,
+		"culture" : 2,
+		"maintenance": 1,
+		"cost": 40,
+		"hurryCostModifier": 20,
+		"uniques": [
+			""
+		],
+	},
 	// 동로마 고유 건물
 	{
 		"name": "Aya Sofya",
