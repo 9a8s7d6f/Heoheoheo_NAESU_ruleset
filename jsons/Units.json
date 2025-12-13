@@ -38,7 +38,7 @@
 		"attackSound": "nonmetalhit"
 	},
 
-	// 마크
+	// 검종류
 	{
 		"name": "Wooden Sword Warrior",
 		"unitType": "Naesu Sword",
