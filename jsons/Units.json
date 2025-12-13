@@ -17,6 +17,17 @@
 		"cost": 27
 	},
 	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"requiredTech": "Pioneer",
+		"movement": 2,
+		"cost": 106,
+		"requiredTech": "Agriculture",
+		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
+			"Requires at least [2] population"],
+		"hurryCostModifier": 20
+	},
+	{
 		"name": "Monakho",
 		"unitType": "Scout",
 		"replaces": "Settler",
@@ -45,7 +56,8 @@
 		"movement": 2,
 		"strength": 5,
 		"cost": 15,
-		"obsoleteTech": "Mining",
+		"obsoleteTech": "Craft",
+		"obsoleteTech": "Stone Instrument",
 		"upgradesTo": "Stone Sword Warrior",
 		"uniques": ["May upgrade to [Stone Sword Warrior] through ruins-like effects"],
 		"attackSound": "nonmetalhit",
@@ -59,12 +71,10 @@
 		"movement": 2,
 		"strength": 9,
 		"cost": 40,
-		"requiredTech": "Mining",
-		"obsoleteTech": "Iron Working",
+		"requiredTech": "Stone Instrument",
 		"upgradesTo": "Iron Swordsman",
 		"uniques": ["May upgrade to [Iron Swordsman] through ruins-like effects"],
 		"attackSound": "nonmetalhit",
-		"promotions": ["Shock I"],
         "civilopediaText": [
 			{"text": "기초적인 무장."}
 		]
@@ -75,12 +85,13 @@
 		"movement": 2,
 		"strength": 14,
 		"cost": 80,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Rifling",
+		"requiredTech": "Basic Iron",
 		"upgradesTo": "Diamond Swordsman",
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit",
-		"promotions": ["Shock I", "Drill I"],
+		"uniques" : [
+			"Consumes [1] [Iron]"
+		]
 		"civilopediaText": [
 			{"text": "일반적인 무장."}
 		]
@@ -116,6 +127,7 @@
 			{"text": "가장 강력하고 완전적인 무장."}
 		]
 	},
+	// 방패류
 	{
 		"name": "Shieldman",
 		"unitType": "Shilder",
@@ -147,18 +159,20 @@
 			{"text": "무거운 방패와 전신 갑옷으로 적의 공격을 막는다."}
 		]
 	},
+	// 도끼류
 	{
-		"name": "도끼병",
+		"name": "철 도끼병",
 		"unitType": "Naesu Sword",
 		"movement": 2,
 		"strength": 11,
 		"cost": 56,
-		"requiredTech": "Bronze Working",
-		"obsoleteTech": "Civil Service",
+		"requiredTech": "Basic Iron",
+		"obsoleteTech": "",
 		"uniques": [
-			"[+10]% Strength <when attacking>",
+			"Consumes [2] [Iron]",
+			"[+20]% Strength <when attacking>",
 			"[-10]% Strength <when defending>",
-			"[+50]% Strength <vs [Shilder] units>"
+			"[+100]% Strength <vs [Shilder] units>"
 		],
 		"attackSound": "metalhit"
 		"civilopediaText": [
@@ -174,15 +188,16 @@
 		"requiredTech": "Civil Service",
 		"obsoleteTech": "Metallurgy",
 		"uniques": [
-			"[+10]% Strength <when attacking>",
+			"[+25]% Strength <when attacking>",
 			"[-10]% Strength <when defending>",
-			"[+50]% Strength <vs [Shilder] units>"
+			"[+100]% Strength <vs [Shilder] units>"
 		],
 		"attackSound": "metalhit"
 		"civilopediaText": [
 			{"text": "이 도끼는 무겁고 더 강하다."}
 		]
 	},
+	// 활류
 	{
 		"name": "Toxophilite",
 		"unitType": "Naesu Bowman",
@@ -215,6 +230,7 @@
 			{"text": "저 는석 궁을 쏠거에 요"}
 		]
 	},
+	// 가스트류
 	{
 		"name": "해피 가스트",
 		"unitType": "Blimp",
@@ -244,6 +260,7 @@
 	{
 		"name": "가스트 활공병",
 		"unitType": "Blimp",
+		"uniqueTo": "Eastern Roman Empire",
 		"movement": 3,
 		"strength": 20,
 		"rangedStrength": 9,
@@ -265,6 +282,7 @@
 			"[+1] Movement <when above [30] HP>"
 		],
 	},
+	//해상유닛
 	{
 		"name": "수영병",
 		"unitType": "Naesu Melee Water",
@@ -305,6 +323,7 @@
 			{"text": "노젓기"}
 		],
 	},
+	//기타
 	{
         "name": "철골렘",
         "unitType": "Sword",
@@ -313,7 +332,7 @@
         "cost": 64,
         "requiredTech": "Metal Casting",
         "uniques": [
-            "Consumes [4] [Iron]",
+            "Consumes [18] [Iron]",
             "Unable to pillage tiles",
             "[-50]% Strength <when number of [Iron] is between [-99] and [0]>",
             "[-30]% Strength <when number of [Iron] is between [1] and [2]>",
@@ -333,7 +352,7 @@
             {"text": "강력한 수호 골렘"}
         ]
     },
-	//Ranged Water
+	//공성
 	{
 		"name": "허허허53식 화차",
 		"unitType": "Naesu Siege",
@@ -380,6 +399,7 @@
 			{"text": "설명"}
 		],
 	},
+	//비행기
 	{
 		"name": "피스톤 전투기",
 		"unitType": "Fighter",
