@@ -1,5 +1,4 @@
 [
-	// 서버 사람들
 	{
 		"name": "Mo bidick",
 		"unitType": "Civilian",
@@ -26,6 +25,17 @@
 		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
 			"Requires at least [2] population"],
 		"hurryCostModifier": 20
+	},
+	{
+		"name": "Scout",
+		"unitType": "Scout",
+		"movement": 2,
+		"strength": 5,
+		"cost": 25,
+		"requiredTech": "Exploration",
+		"uniques": ["May upgrade to [Archer] through ruins-like effects", "Never appears as a Barbarian unit"],
+		"promotions": ["Ignore terrain cost"],
+		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Monakho",
@@ -526,15 +536,13 @@
 		"unitType": "Civilian",
 		"movement": 2
 		"uniques": [
-			"Can speed up construction of a building",
-            "Can instantly construct a [Manufactory] improvement <once>",
+			"Can speed up construction of a building <[3] times>",
             "Is part of Great Person group [Great Person]",
             "Great Person - [Worker]",
 			"Unbuildable",
 			"Uncapturable",
 			"Can build [Land] improvements on tiles",
-			"Can build [Water] improvements on tiles",
-			"Automation is a primary action"
+			"Can build [Water] improvements on tiles"
 		],
 	}
 
