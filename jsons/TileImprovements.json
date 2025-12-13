@@ -129,7 +129,7 @@
 		"terrainsCanBeBuiltOn": ["Plains","Savanna","Desert","Badlands","Frozen Ocean","Tundra","Snow","Mushroom Fields","Hill","Slopes"],
 		"production": 1,
 		"turnsToBuild": 4,
-		"techRequired": "Mining",
+		"techRequired": "Mine",
 		"uniques": [
 			"[+1 Production] <after discovering [Chemistry]>",
 			"Pillaging this improvement yields approximately [+20 Gold]",
@@ -142,7 +142,7 @@
 		"terrainsCanBeBuiltOn": ["Hill","Slopes"],
 		"production": 3,
 		"turnsToBuild": 7,
-		"techRequired": "Mining",
+		"techRequired": "",
 		"uniques": [
 			"Can only be built on [Burrow] tiles",
 			"[+1 Production] <after discovering [Chemistry]>",
