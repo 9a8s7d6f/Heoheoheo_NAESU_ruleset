@@ -87,7 +87,7 @@
 		"shortcutKey": "F"
 	},
 	{
-		"name": "Sugar Cane farm",
+		"name": "Sugarcane farm",
 		"terrainsCanBeBuiltOn": ["Plains","Tundra","Savanna","Flood plains","Mushroom Fields"],
 		"food": 1,
 		"gold": 1,
