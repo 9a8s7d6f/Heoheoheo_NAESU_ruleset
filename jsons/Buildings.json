@@ -5,7 +5,7 @@
 		"production": 2,
 		"cost": 10,
 		"hurryCostModifier": 20,
-		"uniques": ["Unbuildable <after discovering [Pioneer]>","Unavailable <after discovering [Pioneer]>"],
+		"uniques": ["Unbuildable <after discovering [Pioneer]>","Unavailable <after discovering [Pioneer]>"]
 	},
 	{
 		"name": "Furnace",
@@ -14,7 +14,7 @@
 		"food" : 1,
 		"cost": 25,
 		"hurryCostModifier": 20,
-		"uniques": ["Unbuildable <after discovering [Pioneer]>","Unavailable <after discovering [Pioneer]>"],
+		"uniques": ["Unbuildable <after discovering [Pioneer]>","Unavailable <after discovering [Pioneer]>"]
 	},
 	{
 		"name": "Basic Settle buildings",
@@ -22,7 +22,7 @@
 		"production": 5,
 		"food" : 1,
 		"cost": 30,
-		"hurryCostModifier": 40,
+		"hurryCostModifier": 40
 	},
 	{
 		"name": "Blast Furnace",
@@ -30,14 +30,13 @@
 		"production": 4,
 		"percentStatBonus": {"production": 15},
 		"maintenance": 1,
-		"cost": 60,
 		"hurryCostModifier": 20,
 		"requiredNearbyImprovedResources": ["Iron"],
 		"uniques": [
 			"[+1 Production] from [Iron] tiles [in this city]",
 			"[+1 Production] from [Cupper] tiles [in this city]",
 			"[+1 Production] from [Gold] tiles [in this city]"
-		],
+		]
 	},
 	{
 		"name": "Loom",
@@ -45,13 +44,124 @@
 		"production": 2,
 		"culture" : 2,
 		"maintenance": 1,
-		"cost": 40,
 		"hurryCostModifier": 20,
 		"uniques": [
 			""
-		],
+		]
+	},
+	{
+		"name": "Mine Support",
+		"requiredTech": "Advanced Mining",
+		"production": 3,
+		"maintenance": 1,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+1 Production] from [Mine] tiles [in this city]",
+			"Must have an owned [Mine] within [3] tiles"
+		]
+	},
+	{
+		"name": "Fletching table",
+		"requiredTech": "Archery",
+		"production": 2,
+		"maintenance": 2,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+15]% Production when constructing [Archery] units [in this city]"
+		]
+	},
+	{
+		"name": "Sugar Cane Farm",
+		"requiredTech": "Sugar Cane",
+		"production": 2,
+		"food": 1,
+		"gold": 2,
+		"maintenance": 2,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+1 Production] from [Sugarcane farm] tiles [in this city]"
+		]
+	},
+	{
+		"name": "Sugar Cane Farm",
+		"requiredTech": "Sugar Cane",
+		"production": 2,
+		"food": 1,
+		"gold": 2,
+		"maintenance": 2,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+1 Gold] from [Sugarcane farm] tiles [in this city]"
+		]
+	},
+	{
+		"name": "Ranch",
+		"requiredTech": "Horseback Riding",
+		"production": 2,
+		"maintenance": 2,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+1 Production] from [Pasture] tiles [in this city]",
+			"[+15]% Production when constructing [Mounted] units [in this city]"
+		]
+	},
+	{
+		"name": "Cartography Table",
+		"requiredTech": "Papermaking",
+		"production": 1,
+		"maintenance": 1,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+1 Gold, +1 Production] from [Sugarcane farm] tiles [in this city]",
+			"Reveal up to [all] [All] within a [5] tile radius",
+		]
+	},
+	{
+		"name": "Nether Portal",
+		"requiredTech": "Nether",
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+1 Production] <after discovering [Iron Working]>"
+		]
+	},
+	{
+		"name": "River Bridge",
+		"requiredTech": "Engineering",
+		"food": 1,
+		"gold": 1,
+		"culture": 2,
+		"percentStatBonus": {"food": 5},
+		"hurryCostModifier": 30,
+		"uniques": [
+			"Must be on [River]",
+			"[+2] population [in this city]"
+		]
+	},
+	{
+		"name": "Library",
+		"requiredTech": "Writing",
+		"science": 2,
+		"culture": 1,
+		"maintenance": 2,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+1 Science] per [2] population [in this city]",
+			"[+2 Faith, +1 Culture] [in this city] <after discovering [Theology]>"
+		]
+	},
+	{
+		"name": "Court",
+		"requiredTech": "Judgement",
+		"maintenance": 5,
+		"hurryCostModifier": 50,
+		"uniques": [
+			"Removes extra unhappiness from annexed cities",
+			"Can only be built <in [Annexed] cities>",
+			"[-40]% production cost <in [Annexed] cities>"
+		]
 	},
 	// 동로마 고유 건물
+	// "Only available <if [Colosseum] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city", 
 	{
 		"name": "Aya Sofya",
 		"uniqueTo": "Eastern Roman Empire",
