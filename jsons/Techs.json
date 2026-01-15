@@ -15,7 +15,7 @@
 			{
 				"name": "Craft",
 				"row": 7,
-				"quote": "'제작대나 빨리 만드라구우!!!!' - 나알제",
+				"quote": "'제작대 왜 3개나 만들었어 ㅋㄹㅈ' - 나알제",
 				"uniques": ["Starting tech"]
 			}
 		]
@@ -52,7 +52,7 @@
 				"name": "Coal Mining",
 				"row": 4,
 				"prerequisites": ["Stone Instrument"],
-				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
+				"quote": " "
 			},
 			{
 				"name": "Masonry",
@@ -64,13 +64,13 @@
 				"name": "Wooden Architecture",
 				"row": 7,
 				"prerequisites": ["Craft"],
-				"quote": ""
+				"quote": "'유튜브에서 베껴만들었어요' - 모비딕"
 			},
 			{
 				"name": "Agriculture",
 				"row": 8,
 				"prerequisites": ["Craft","Stone Instrument"],
-				"quote": "'농업은 문명의 근간!' - 나알제 및 다수"
+				"quote": "'농업은 문명의 근간!' - 나알제"
 			},
 			{
 				"name": "Hunting",
@@ -97,7 +97,7 @@
 				"name": "Torch",
 				"row": 5,
 				"prerequisites": ["Coal Mining"],
-				"quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4"
+				"quote": "'아니 님들아 왜 횃불을 안박아요!!!!!!!!!!' - 나알제"
 			},
 			{
 				"name": "Build",
@@ -187,7 +187,8 @@
 				"name": "Mathematics",
 				"row": 6,
 				"prerequisites": ["Construction"],
-				"quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon"
+				"quote": "'Mathematics is the gate and key to the sciences.' - Roger Bacon",
+				"uniques" : ["[+10]% Production when constructing [All] buildings [in this city]"]
 			},
 			{
 				"name": "Canal",
