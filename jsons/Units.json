@@ -96,6 +96,7 @@
 		"strength": 14,
 		"cost": 80,
 		"requiredTech": "Basic Iron",
+		"obsoleteTech": "Gunpowder",
 		"upgradesTo": "Diamond Swordsman",
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit",
@@ -112,8 +113,7 @@
 		"movement": 2,
 		"strength": 21,
 		"cost": 140,
-		"requiredTech": "Steel",
-		"obsoleteTech": "Gunpowder",
+		"requiredTech": "Advanced Armor",
 		"upgradesTo": "Netherite Swordsman",
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit",
@@ -195,7 +195,7 @@
 		"movement": 2,
 		"strength": 16,
 		"cost": 90,
-		"requiredTech": "Civil Service",
+		"requiredTech": "Advanced Armor",
 		"obsoleteTech": "Metallurgy",
 		"uniques": [
 			"[+25]% Strength <when attacking>",
@@ -216,9 +216,9 @@
 		"rangedStrength": 7,
 		"cost": 50,
 		"requiredTech": "Archery",
-		"obsoleteTech": "Construction",
+		"obsoleteTech": "Crossbow",
 		"upgradesTo": "Composite Bowman",
-		"uniques": ["[3] Range <when stacked with a [Mo bidick] unit>"],
+		"uniques": ["[+1] Range <when stacked with a [Mo bidick] unit>"],
 		"attackSound": "arrow"
 		"civilopediaText": [
 			{"text": "저 는활 을쏠거 에요"}
@@ -231,11 +231,11 @@
 		"strength": 12,
 		"rangedStrength": 16,
 		"cost": 120,
-		"requiredTech": "Machinery",
+		"requiredTech": "Crossbow",
 		"upgradesTo": "Gatling Gun",
 		"obsoleteTech": "Industrialization",
 		"attackSound": "crossbow"
-		"uniques": ["[3] Range <when stacked with a [Mo bidick] unit>"],
+		"uniques": ["[+1] Range <when stacked with a [Mo bidick] unit>"],
 		"civilopediaText": [
 			{"text": "저 는석 궁을 쏠거에 요"}
 		]
@@ -268,9 +268,8 @@
 		],
 	},
 	{
-		"name": "가스트 활공병",
+		"name": "가스트 궁병",
 		"unitType": "Blimp",
-		"uniqueTo": "Eastern Roman Empire",
 		"movement": 3,
 		"strength": 20,
 		"rangedStrength": 9,
@@ -325,7 +324,6 @@
 		"promotions": ["Landing Party"],
 		"uniques": [
 			"Cannot enter ocean tiles",
-			"Never appears as a Barbarian unit",
 			"[+20]% Strength <when fighting in [Coast] tiles>",
 			"Unavailable <if [RekMOD] is enabled>"
 			],
@@ -425,7 +423,8 @@
 			"[50]% chance to intercept air attacks",
 			"[+150]% Strength <vs [Bomber] units>",
 			"[+50]% Strength <vs [Helicopter] units>",
-			"[+200]% Strength <vs [Blimp] units>"
+			"[+200]% Strength <vs [Blimp] units>",
+			"Never appears as a Barbarian unit"
 		]
 		"attackSound": "arrow"
 	},
@@ -443,7 +442,8 @@
 			"[50]% chance to intercept air attacks",
 			"[+150]% Strength <vs [Bomber] units>",
 			"[+50]% Strength <vs [Helicopter] units>",
-			"[+200]% Strength <vs [Blimp] units>"
+			"[+200]% Strength <vs [Blimp] units>",
+			"Never appears as a Barbarian unit"
 		]
 		"attackSound": "bombing"
 	},
@@ -455,7 +455,7 @@
 		"strength": 20,
 		"cost": 105,
 		"requiredTech": "Metallurgy",
-		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
+		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units","Never appears as a Barbarian unit"]
 	},
 	
 	// 테오도시아나 고유유닛
@@ -529,6 +529,60 @@
 			"[3] Sight <when at war>"
 		],
 	},
+
+	//바바리안
+	{
+		"name": "Zombie",
+		"unitType": "Naesu Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "Wooden Sword Warrior",
+		"movement": 2,
+		"strength": 8,
+		"cost": 20,
+		"upgradesTo": "Stone Sword Warrior",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Armored Zombie",
+		"unitType": "Naesu Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "Stone Sword Warrior",
+		"movement": 2,
+		"strength": 10,
+		"cost": 40,
+		"requiredTech": "Stone Instrument",
+		"upgradesTo": "Iron Swordsman",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Baby Zombie",
+		"unitType": "Naesu Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "Iron Swordsman",
+		"movement": 3,
+		"strength": 14,
+		"cost": 80,
+		"requiredTech": "Basic Iron",
+		"upgradesTo": "Iron Swordsman",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			""
+		]
+	},
+	{
+		"name": "Enderman",
+		"unitType": "Naesu Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "Diamond Swordsman",
+		"movement": 2,
+		"strength": 21,
+		"cost": 140,
+		"requiredTech": "Advanced Armor",
+		"upgradesTo": "Iron Swordsman",
+		"attackSound": "nonmetalhit"
+	},
+
+	//크리퍼, 거미, 팬텀, 우민과 파괴수
 	//Great Person
 
 	{
