@@ -144,8 +144,8 @@
 		"movement": 2,
 		"strength": 11,
 		"cost": 46,
-		"requiredTech": "Bronze Working",
-		"obsoleteTech": "Civil Service",
+		"requiredTech": "Shilder",
+		"obsoleteTech": "Advanced Armor",
 		"upgradesTo": "중갑병",
 		"uniques": ["[-50]% Strength <when attacking>", "[+50]% Strength <when defending>"],
 		"attackSound": "nonmetalhit"
@@ -160,7 +160,7 @@
 		"movement": 2,
 		"strength": 16,
 		"cost": 80,
-		"requiredTech": "Civil Service",
+		"requiredTech": "Advanced Armor",
 		"upgradesTo": "Lancer",
 		"uniques": ["[-66]% Strength <when attacking>", "[+75]% Strength <when defending>"],
 		"attackSound": "metalhit"
@@ -177,7 +177,7 @@
 		"strength": 11,
 		"cost": 56,
 		"requiredTech": "Basic Iron",
-		"obsoleteTech": "",
+		"obsoleteTech": "Advanced Armor",
 		"uniques": [
 			"Consumes [2] [Iron]",
 			"[+20]% Strength <when attacking>",
@@ -492,9 +492,7 @@
 			{"text": "이것도 너프해 보시지!"}
 		],
 		"movement": 4,
-		"strength": 70,
-		"rangedStrength": 70,
-		"range": 1,
+		"strength": 10,
 		"cost": 100,
 		"hurryCostModifier": -50,
 		"requiredTech": "Mathematics",
@@ -502,10 +500,11 @@
 			"Self-destructs when attacking",
 			"No defensive terrain bonus",
 			"No defensive terrain penalty",
-			"[+100]% Strength <when attacking>",
+			"[+500]% Strength <when attacking>",
+			"[-80]% Strength <when defending>",
 			"Unable to capture cities",
 			"[-100]% XP gained from combat",
-			"[-75]% Strength <vs cities>",
+			"[-90]% Strength <vs cities>",
 			"[+1] Movement <upon being promoted>",
 		],
 		"attackSound": "tankshot"
@@ -540,7 +539,8 @@
 		"strength": 8,
 		"cost": 20,
 		"upgradesTo": "Stone Sword Warrior",
-		"attackSound": "nonmetalhit"
+		"attackSound": "nonmetalhit",
+		"uniques": ["[-25]% Strength <when fighting in {non-[Unowned]} tiles>"]
 	},
 	{
 		"name": "Armored Zombie",
@@ -552,7 +552,8 @@
 		"cost": 40,
 		"requiredTech": "Stone Instrument",
 		"upgradesTo": "Iron Swordsman",
-		"attackSound": "metalhit"
+		"attackSound": "metalhit",
+		"uniques": ["[-25]% Strength <when fighting in {non-[Unowned]} tiles>"]
 	},
 	{
 		"name": "Baby Zombie",
@@ -563,10 +564,11 @@
 		"strength": 14,
 		"cost": 80,
 		"requiredTech": "Basic Iron",
-		"upgradesTo": "Iron Swordsman",
+		"upgradesTo": "Diamond Swordsman",
 		"attackSound": "nonmetalhit",
 		"uniques": [
-			""
+			"[-25]% Strength <when fighting in {non-[Unowned]} tiles>",
+			
 		]
 	},
 	{
@@ -578,10 +580,73 @@
 		"strength": 21,
 		"cost": 140,
 		"requiredTech": "Advanced Armor",
-		"upgradesTo": "Iron Swordsman",
-		"attackSound": "nonmetalhit"
+		"attackSound": "nonmetalhit",
+		"uniques": ["[-25]% Strength <when fighting in {non-[Unowned]} tiles>"]
 	},
-
+	{
+		"name": "Ravager",
+		"unitType": "Naesu Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "Netherite Swordsman",
+		"movement": 2,
+		"strength": 25,
+		"cost": 162,
+		"requiredTech": "Gunpowder",
+		"attackSound": "nonmetalhit",
+		"uniques": ["[-25]% Strength <when fighting in {non-[Unowned]} tiles>"]
+	},
+	{
+		"name": "Spider",
+		"unitType": "Shilder",
+		"uniqueTo": "Barbarians",
+		"replaces": "Shieldman",
+		"movement": 2,
+		"strength": 11,
+		"cost": 46,
+		"requiredTech": "Shilder",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			"[+20]% Strength <when attacking>",
+			"[-20]% Strength <when defending>",
+			"Ignores terrain cost",
+			"[-25]% Strength <when fighting in {non-[Unowned]} tiles>",
+			"[+5] Strength <when fighting in [Rough terrain] tiles>"
+		]
+	},
+	{
+		"name": "Cave Spider",
+		"unitType": "Shilder",
+		"uniqueTo": "Barbarians",
+		"replaces": "중갑병",
+		"movement": 2,
+		"strength": 16,
+		"cost": 80,
+		"requiredTech": "Advanced Armor",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			"[+20]% Strength <when attacking>",
+			"[-20]% Strength <when defending>",
+			"Ignores terrain cost",
+			"[-25]% Strength <when fighting in {non-[Unowned]} tiles>",
+			"[+10] Strength <when fighting in [Rough terrain] tiles>"
+		]
+	},
+	{
+		"name": "Vindicator",
+		"unitType": "Naesu Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "철 도끼병",
+		"movement": 2,
+		"strength": 16,
+		"cost": 56,
+		"requiredTech": "Advanced Armor",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			"[+20]% Strength <when attacking>",
+			"[-20]% Strength <when defending>",
+			"[+100]% Strength <vs [Shilder] units>"
+		]
+	},
 	//크리퍼, 거미, 팬텀, 우민과 파괴수
 	//Great Person
 
