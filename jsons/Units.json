@@ -209,7 +209,7 @@
 	},
 	// 활류
 	{
-		"name": "Toxophilite",
+		"name": "Bowman",
 		"unitType": "Naesu Bowman",
 		"movement": 2,
 		"strength": 5,
@@ -225,7 +225,7 @@
 		]
 	},
 	{
-		"name": "Arbalist",
+		"name": "Crossbowman",
 		"unitType": "Naesu Crossbowman",
 		"movement": 2,
 		"strength": 12,
@@ -264,7 +264,8 @@
 			"No defensive terrain penalty",
 			"[3] Sight",
 			"[+1] Sight <in tiles not adjacent to [Mountain] tiles>",
-			"[+1] Movement <when above [30] HP>"
+			"[+1] Movement <when above [30] HP>",
+			"Never appears as a Barbarian unit"
 		],
 	},
 	{
@@ -288,7 +289,8 @@
 			"No defensive terrain penalty",
 			"[3] Sight",
 			"[+1] Sight <in tiles not adjacent to [Mountain] tiles>",
-			"[+1] Movement <when above [30] HP>"
+			"[+1] Movement <when above [30] HP>",
+			"Never appears as a Barbarian unit"
 		],
 	},
 	//해상유닛
@@ -568,7 +570,7 @@
 		"attackSound": "nonmetalhit",
 		"uniques": [
 			"[-25]% Strength <when fighting in {non-[Unowned]} tiles>",
-			
+			"[+15]% to Flank Attack bonuses"
 		]
 	},
 	{
@@ -597,7 +599,7 @@
 	},
 	{
 		"name": "Spider",
-		"unitType": "Shilder",
+		"unitType": "Naesu Sword",
 		"uniqueTo": "Barbarians",
 		"replaces": "Shieldman",
 		"movement": 2,
@@ -615,7 +617,7 @@
 	},
 	{
 		"name": "Cave Spider",
-		"unitType": "Shilder",
+		"unitType": "Naesu Sword",
 		"uniqueTo": "Barbarians",
 		"replaces": "중갑병",
 		"movement": 2,
@@ -647,6 +649,118 @@
 			"[+100]% Strength <vs [Shilder] units>"
 		]
 	},
+	{
+		"name": "Skeleton",
+		"unitType": "Naesu Bowman",
+		"uniqueTo": "Barbarians",
+		"replaces": "Bowman",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 7,
+		"cost": 50,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Crossbow",
+		"upgradesTo": "Crossbowman",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			"[-25]% Strength <when fighting in {non-[Unowned]} tiles>",
+			"[+30]% Strength <when fighting in [Snow] tiles>",
+			"[+30]% Strength <when fighting in [Tundra] tiles>"
+		]
+	},
+	{
+		"name": "Armored Skeleton",
+		"unitType": "Naesu Bowman",
+		"uniqueTo": "Barbarians",
+		"replaces": "Bowman",
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 16,
+		"cost": 120,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Crossbow",
+		"upgradesTo": "",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			"[-25]% Strength <when fighting in {non-[Unowned]} tiles>",
+			"[+30]% Strength <when fighting in [Snow] tiles>",
+			"[+30]% Strength <when fighting in [Tundra] tiles>"
+		]
+	},
+	{
+		"name": "Drowned",
+		"unitType": "Naesu Melee Water",
+		"uniqueTo": "Barbarians",
+		"replaces": "수영병",
+		"movement": 2,
+		"strength": 8,
+		"cost": 20,
+		"upgradesTo": "보트병",
+		"obsoleteTech": "Sailing",
+		"attackSound": "nonmetalhit"
+		"uniques": [
+			"[-25]% Strength <when fighting in {non-[Unowned]} tiles>",
+			"[-20]% Strength <when fighting in [Ocean] tiles>",
+			"Eliminates combat penalty for attacking across a coast"
+			],
+		"civilopediaText": [
+			{"text": "어푸어푸"}
+		],
+	},
+	{
+        "name": "creeper",
+        "unitType": "Naesu Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "철골렘",
+        "movement": 2,
+        "strength": 20,
+        "cost": 64,
+        "requiredTech": "Metal Casting",
+        "uniques": [
+            "Self-destructs when attacking",
+			"[+20]% Strength <when attacking>",
+			"[-20]% Strength <when defending>",
+			"[-50]% Strength <vs cities>",
+			"[+10] Strength <when fighting in [Rough terrain] tiles>",
+			"[+50]% to Flank Attack bonuses"
+        ],
+        "attackSound": "nonmetalhit"
+        "promotions": ["Cover I", "Cover II"],
+        "civilopediaText": [
+            {"text": "강력한 수호 골렘"}
+        ]
+    },
+	{
+		"name": "깡통1",
+		"unitType": "Naesu Sword",
+		"movement": 2,
+        "strength": 1453,
+        "cost": 1453,
+		"attackSound": "nonmetalhit",
+		"requiredTech": "Craft"
+		"uniques": ["Unavailable"]
+	},
+	{
+		"name": "Phantom",
+        "unitType": "Blimp",
+		"uniqueTo": "Barbarians",
+		"replaces": "깡통1",
+        "movement": 2,
+        "strength": 20,
+        "cost": 64,
+		"requiredTech": "Craft",
+		"attackSound": "nonmetalhit",
+		"uniques": [
+			"[-20]% Strength <when defending>",
+			"[-50]% Strength <vs cities>",
+			"[-50]% Strength <vs cities> <when attacking> ",
+			"[+15]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+25]% to Flank Attack bonuses",
+			"Unable to pillage tiles",
+			"[+2] Movement <every [3] turns>"
+		]
+	},
+	
 	//크리퍼, 거미, 팬텀, 우민과 파괴수
 	//Great Person
 
