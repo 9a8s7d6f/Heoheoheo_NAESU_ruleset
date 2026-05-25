@@ -832,37 +832,25 @@
 			{
 				"name": "Nation",
 				"row": 6,
-				"prerequisites": ["Strengthened Equipment"],
+				"prerequisites": ["Statue","Cavalry Training"],
 				"quote": ""
 			},
 			{
-				"name": "Nether Gold Mining",
-				"row": 8,
-				"prerequisites": ["Nether Mining"],
-				"quote": ""
-			},
-			{
-				"name": "Statue",
-				"row": 6,
-				"prerequisites": ["Cultural Religion","Tower"],
-				"quote": ""
-			},
-			{
-				"name": "Cavalry Training",
-				"row": 7,
-				"prerequisites": ["Cultural Religion","Exchange Rate"],
-				"quote": ""
-			},
-			{
-				"name": "High Architecture",
-				"row": 8,
-				"prerequisites": ["Strengthened Equipment","Tower","Distant Market"],
-				"quote": ""
-			},
-			{
-				"name": "Dungeon Raid",
+				"name": "Improved Construction",
 				"row": 10,
-				"prerequisites": ["Railway Department"],
+				"prerequisites": ["High Architecture"],
+				"quote": ""
+			},
+			{
+				"name": "Expanding Market",
+				"row": 11,
+				"prerequisites": ["Distant Market"],
+				"quote": ""
+			},
+			{
+				"name": "End Expedition",
+				"row": 12,
+				"prerequisites": ["Dungeon Raid"],
 				"quote": ""
 			}
 		]
