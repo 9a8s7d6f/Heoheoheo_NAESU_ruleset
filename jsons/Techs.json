@@ -816,5 +816,56 @@
 			}
 		]
 	},
+	{
+		"columnNumber": 22,
+		"era": "Netherite era",
+		"techCost": 4000,
+		"buildingCost": 1200,
+		"wonderCost": 3000,
+		"techs": [
+			{
+				"name": "Ancient Debris",
+				"row": 4,
+				"prerequisites": ["Strengthened Mining","Nether Gold Mining"],
+				"quote": ""
+			},
+			{
+				"name": "Nation",
+				"row": 6,
+				"prerequisites": ["Strengthened Equipment"],
+				"quote": ""
+			},
+			{
+				"name": "Nether Gold Mining",
+				"row": 8,
+				"prerequisites": ["Nether Mining"],
+				"quote": ""
+			},
+			{
+				"name": "Statue",
+				"row": 6,
+				"prerequisites": ["Cultural Religion","Tower"],
+				"quote": ""
+			},
+			{
+				"name": "Cavalry Training",
+				"row": 7,
+				"prerequisites": ["Cultural Religion","Exchange Rate"],
+				"quote": ""
+			},
+			{
+				"name": "High Architecture",
+				"row": 8,
+				"prerequisites": ["Strengthened Equipment","Tower","Distant Market"],
+				"quote": ""
+			},
+			{
+				"name": "Dungeon Raid",
+				"row": 10,
+				"prerequisites": ["Railway Department"],
+				"quote": ""
+			}
+		]
+	},
 	
 ]
