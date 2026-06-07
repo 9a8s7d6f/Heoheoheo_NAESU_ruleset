@@ -1,0 +1,107 @@
+[
+    // 공용 자원
+    {
+        "name": "나무",
+        "resourceType": "Strategic",
+        "uniques": [
+			"Excluded from map editor",
+			"Doesn't generate naturally"
+        ]
+    },
+    {
+        "name": "석재",
+        "resourceType": "Strategic",
+        "uniques": [
+			"Excluded from map editor",
+			"Doesn't generate naturally"
+        ]
+    },
+    {
+        "name": "철",
+        "resourceType": "Strategic",
+        "uniques": [
+			"Excluded from map editor",
+			"Doesn't generate naturally"
+        ]
+    },
+    {
+        "name": "금",
+        "resourceType": "Strategic",
+        "uniques": [
+			"Excluded from map editor",
+			"Doesn't generate naturally"
+        ]
+    },
+    {
+        "name": "희귀 자원", //diamond and nethernite
+        "resourceType": "Strategic",
+        "uniques": [
+			"Excluded from map editor",
+			"Doesn't generate naturally"
+        ]
+    },
+    
+    {
+        "name": "보병 장비",
+        "resourceType": "Strategic",
+        "uniques": [
+			"Excluded from map editor",
+			"Doesn't generate naturally"
+        ]
+    },
+
+
+
+    // 인게임 수치
+    {
+        "name": "행정력", //Bureaucracy
+        "resourceType": "Strategic",
+        "uniques": [
+            "Cannot be traded",
+			"Excluded from map editor",
+			"Doesn't generate naturally"
+        ]
+    },
+    {
+        "name": "Bureaucracy",
+        "resourceType": "Strategic",
+        "uniques": [
+            "Cannot be traded",
+			"Excluded from map editor",
+			"Doesn't generate naturally"
+        ]
+    },
+
+
+
+
+    
+    // Bonus resources
+    {
+        "name": "Cattle",
+        "resourceType": "Bonus",
+        "terrainsCanBeFoundOn": ["Grassland","Plains"],
+        "food": 1,
+        "improvement": "Pasture",
+        "improvementStats": {"production": 1},
+        "uniques": [
+            "Generated on every [22] tiles <in [{Featureless} {Grassland}] tiles>",
+            "Generated on every [22] tiles <in [{Featureless} {Plains}] tiles>"
+        ]
+    },
+    // Strategic resources
+
+    // Luxury resources
+
+
+    // 변수
+    {
+        "name": "군대 제한",
+        "resourceType": "Strategic",
+        "uniques": [
+            "Cannot be traded",
+			"Excluded from map editor",
+			"Doesn't generate naturally"
+        ]
+    },
+    
