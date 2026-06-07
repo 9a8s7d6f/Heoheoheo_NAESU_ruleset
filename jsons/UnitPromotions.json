@@ -3,14 +3,16 @@
 	{
 		"name": "허허허의 노예정신",
         "uniques": [
-          "No damage penalty for wounded units",
-          "[+10]% Strength",
-          "[+10]% Strength <vs [Non-City]>"
+			"Only available <>",
+			"No damage penalty for wounded units",
+			"[+10]% Strength",
+			"[+10]% Strength <vs [Non-City]>"
 		]
   	},
     {
 		"name": "노예군",
         "uniques": [
+			"Only available <>",
           "No damage penalty for wounded units",
           "[+10]% Strength",
           "[+10]% Strength <vs [Non-City]>"
@@ -19,6 +21,7 @@
     {
 		"name": "형벌 부대",
         "uniques": [
+			"Only available <>",
           "No damage penalty for wounded units",
           "[+10]% Strength",
           "[+10]% Strength <vs [Non-City]>"
@@ -27,6 +30,7 @@
     {
 		"name": "성전사",
         "uniques": [
+			"Only available <>",
           "No damage penalty for wounded units",
           "[+10]% Strength",
           "[+10]% Strength <vs [Non-City]>"
@@ -35,6 +39,7 @@
     {
 		"name": "소년병",
         "uniques": [
+			"Only available <>",
           "No damage penalty for wounded units",
           "[+10]% Strength",
           "[+10]% Strength <vs [Non-City]>"
@@ -43,6 +48,7 @@
   	{
         "name": "결사적 방어",
         "uniques": [
+			"Only available <>",
             "[-30]% Strength <when fighting in [Enemy Land] tiles>",
             "[-30]% Strength <when fighting in [Enemy Land] tiles> <when attacking>",
         	"[+15]% Strength <when fighting in [Friendly Land] tiles>",
@@ -55,6 +61,7 @@
 	{
 		"name": "불사의 토템",
     	"uniques": [
+			"Only available <>",
 			"[This Unit] heals [100] HP <once> <upon being defeated>",
 			"[This Unit] heals [80] HP <once> <when below [20] HP>",
 			"[This Unit] heals [60] HP <[3] times> <upon losing at least [3] HP in a single attack>"
@@ -63,6 +70,7 @@
 	{
 		"name": "승전보 I"
 		"uniques": [
+			"Only available <>",
 			"Heals [20] damage if it kills a unit"
 		]
 	},
@@ -119,7 +127,7 @@
           "[+10]% Strength",
           "[+10]% Strength <vs [Non-City]>"
 		]
-        "unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "unitTypes": [""],
   	},
     {
 		"name": "습격",
@@ -128,7 +136,7 @@
           "[+10]% Strength",
           "[+10]% Strength <vs [Non-City]>"
 		]
-        "unitTypes": ["Naesu Bowman","Naesu Crossbowman","Naesu Siege"],
+        "unitTypes": [""],
   	},
   
 	//내수 활
