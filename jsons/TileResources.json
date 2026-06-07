@@ -1,7 +1,7 @@
 [
     // 공용 자원
     {
-        "name": "나무",
+        "name": "Wood",
         "resourceType": "Strategic",
         "uniques": [
 			"Excluded from map editor",
@@ -9,7 +9,7 @@
         ]
     },
     {
-        "name": "석재",
+        "name": "Stones",
         "resourceType": "Strategic",
         "uniques": [
 			"Excluded from map editor",
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "name": "철",
+        "name": "Iron",
         "resourceType": "Strategic",
         "uniques": [
 			"Excluded from map editor",
@@ -25,7 +25,7 @@
         ]
     },
     {
-        "name": "금",
+        "name": "Gold ingot",
         "resourceType": "Strategic",
         "uniques": [
 			"Excluded from map editor",
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "name": "희귀 자원", //diamond and nethernite
+        "name": "Rare Resource", //diamond and nethernite
         "resourceType": "Strategic",
         "uniques": [
 			"Excluded from map editor",
@@ -42,7 +42,7 @@
     },
     
     {
-        "name": "보병 장비",
+        "name": "Infantry Equipment",
         "resourceType": "Strategic",
         "uniques": [
 			"Excluded from map editor",
@@ -54,7 +54,7 @@
 
     // 인게임 수치
     {
-        "name": "행정력", //Bureaucracy
+        "name": "Bureaucracy",
         "resourceType": "Strategic",
         "uniques": [
             "Cannot be traded",
@@ -63,7 +63,7 @@
         ]
     },
     {
-        "name": "Bureaucracy",
+        "name": "",
         "resourceType": "Strategic",
         "uniques": [
             "Cannot be traded",
