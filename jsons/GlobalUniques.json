@@ -5,7 +5,7 @@
         "[-50]% growth [in all cities] <when between [-10] and [-4] [Happiness]>",
         "[-75]% growth [in all cities] <when between [-14] and [-11] [Happiness]>",
         "Nullifies Growth [in all cities] <when below [-15] [Happiness]>",
-        "[-50]% [Production] [in all cities] <when below [-10] [Happiness]>",
+        "[-50]% [Production] [in all cities] <when below [-15] [Happiness]>",
         "[-10]% Strength <for [All] units> <when between [-10] and [-6] [Happiness]>",
         "[-33]% Strength <for [All] units> <when below [-10] [Happiness]>",
         "Cannot build [Settler] units <when below [-15] [Happiness]>",
@@ -15,7 +15,42 @@
         // 이건 국가 관련 기술 연구 이후에 가능하게 할것, 임시로 여기다가 메모해둠
        //  "Enables Defensive Pacts",
 
-        
+        //우려되는 행정력 부족
+        "[-3]% [Culture] [in all cities] <when between [-3] and [-1] [Bureaucracy]>",
+        "[-3]% [Science] [in all cities] <when between [-3] and [-1] [Bureaucracy]>",
+
+        //경미한 행정력 부족
+        "[-5]% [Culture] [in all cities] <when between [-7] and [-4] [Bureaucracy]>",
+        "[-5]% [Science] [in all cities] <when between [-7] and [-4] [Bureaucracy]>",
+        "[-3]% Strength <for [All] units> <when between [-7] and [-4] [Bureaucracy]>",
+
+        //행정력 부족
+        "[-10]% [Culture] [in all cities] <when between [-7] and [-4] [Bureaucracy]>",
+        "[-10]% [Science] [in all cities] <when between [-7] and [-4] [Bureaucracy]>",
+        "[+5]% maintenance cost for [All] buildings [in all cities] <when between [-7] and [-4] [Bureaucracy]>",
+        "[-5]% Strength <for [All] units> <when between [-7] and [-4] [Bureaucracy]>",
+        "[-1 Happiness] <when between [-7] and [-4] [Bureaucracy]>",
+
+        //광범위한 행정력 부족
+        "[-20]% [Culture] [in all cities] <when between [-10] and [-8] [Bureaucracy]>",
+        "[-20]% [Science] [in all cities] <when between [-10] and [-8] [Bureaucracy]>",
+        "[+10]% maintenance cost for [All] buildings [in all cities] <when between [-10] and [-8] [Bureaucracy]>",
+        "[-10]% Strength <for [All] units> <when between [-10] and [-8] [Bureaucracy]>",
+        "[-2 Happiness] <when between [-10] and [-8] [Bureaucracy]>",
+
+        //심각한 행정력 부족
+        "[-30]% [Culture] [in all cities] <when between [-15] and [-11] [Bureaucracy]>",
+        "[-30]% [Science] [in all cities] <when between [-15] and [-11] [Bureaucracy]>",
+        "[+20]% maintenance cost for [All] buildings [in all cities] <when between [-15] and [-11] [Bureaucracy]>",
+        "[-20]% Strength <for [All] units> <when between [-15] and [-11] [Bureaucracy]>",
+        "[-3 Happiness] <when between [-15] and [-11] [Bureaucracy]>",
+
+        //행정 무질서
+        "[-50]% [Culture] [in all cities] <when below [-15] [Happiness]>",
+        "[-50]% [Science] [in all cities] <when below [-15] [Happiness]>",
+        "[+33]% maintenance cost for [All] buildings [in all cities] <when below [-15] [Happiness]>",
+        "[-33]% Strength <for [All] units> <when below [-15] [Happiness]>",
+        "[-5 Happiness] <when below [-15] [Happiness]>",
 
         // TODO: Implement the uniques below
         // "[+20]% [Culture] [in all cities] <during a golden age>",
