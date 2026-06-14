@@ -53,7 +53,7 @@
 			"Nullifies [Science] [in all cities] <when below [-50] [Happiness]>",
 			"Gain a free [Heoheoheodevil] [in all cities] <when number of [[World Wonder] Buildings] is more than [4]>"
 		],
-		"cities": ["Constantinopolis","Patatapolis","Kriopolis","Adrianopolis","Third City","북부 마을", "Megalopolis","Edirne","Nicaeanopolis"],
+		"cities": ["Constantinopolis","Patatapolis", "Adrianopolis", "Megalopolis","Edirne","Nicaeanopolis"],
 		"spyNames": ["Kaelen","Rivor","Seltra","Daven","Lyric","Corven","Veyra","Talin","Marvek","Zyra","Orin","Kyler","Sereth","Jorin","Velric","Alaric","Nyven","Cairos","Tavren","Erynd","Liora","Soren","Draven","Korra","Rilian","Veylin","Darius","Zaren","Myla","Thalen"],
 		"civilopediaText": [
 			{ "text": "abcde" },
@@ -177,7 +177,9 @@
 			"[+30]% Culture cost of adopting new Policies",
 			"[+30]% Science cost of researching new Technologies",
 			"[-20]% spy effectiveness [in all cities]",
-			"May buy items in puppet cities"
+			"May buy items in puppet cities",
+			"May not annex cities",
+			"Can spend Gold to annex or puppet a City-State that has been your Ally for [3] turns"
 		],
 		"cities": ["파타타폴리스","신 모비딕폴리스","모비딕 3시티","모비딕 4시티","모비딕 5시티","모비딕 6시티","모비딕 7시티","모비딕 8시티","모비딕 9시티","모비딕 10시티","모비딕 11시티","모비딕 12시티"],
 		"spyNames": ["Kaelen","Rivor","Seltra","Daven","Lyric","Corven","Veyra","Talin","Marvek","Zyra","Orin","Kyler","Sereth","Jorin","Velric","Alaric","Nyven","Cairos","Tavren","Erynd","Liora","Soren","Draven","Korra","Rilian","Veylin","Darius","Zaren","Myla","Thalen"]
@@ -228,7 +230,6 @@
 			"[+30]% [Science] <while researching [Telecommunications]>",
 			"[+30]% [Science] <while researching [Particle Physics]>",
 //[Culture] Per Turn
-			"[+1 Production] from every [Production]",
 			"[+1 Happiness] from every [Science]",
 			"[+20 Gold] <for every [Era number]>"
 			
@@ -279,7 +280,7 @@
 			"[+100]% Culture cost of natural border growth [in all cities]",
 			"May buy [Melee] units for [10] [Culture] [in all cities]",
 			"[+20]% maintenance cost for [All] buildings [in all cities]",
-			"[-20]% Production when constructing [All] buildings [in all cities]",
+			"[-20]% Production when constructing [All] buildings [in all cities] <when below [5] [Happiness]>",
 			"[+10]% [Happiness]"
 		],
 		"cities": ["Amondpolis, 제1인공섬"],
@@ -299,5 +300,66 @@
         		"color": "#ffeb7f"
     		}
 		]
+	},
+// 도국
+	{
+		"name": "제3마을",
+		"adjective": ["제3마을의"],
+		"cityStateType": "Cultured",
+
+		"declaringWar": "lah",
+		"attacked": "lah",
+		"defeated": "lah",
+		"outerColor": [255, 255, 255],
+		"innerColor": [62, 50, 168],
+		"cities": ["제3마을"]
+	},
+	{
+		"name": "북부마을",
+		"adjective": ["북부마을의"],
+		"cityStateType": "Maritime",
+
+		"declaringWar": "lah",
+		"attacked": "lah",
+		"defeated": "lah",
+		"outerColor": [255, 255, 255],
+		"innerColor": [107, 168, 50],
+		"cities": ["북부마을"]
+	},
+	{
+		"name": "크리오폴리스",
+		"adjective": ["크리오폴리스의"],
+		"cityStateType": "Militaristic",
+
+		"declaringWar": "lah",
+		"attacked": "lah",
+		"defeated": "lah",
+		"outerColor": [255, 255, 255],
+		"innerColor": [26, 231, 235],
+		"cities": ["크리오폴리스"]
+	},
+	{
+		"name": "모낙호폴리스",
+		"adjective": ["모낙호폴리스의"],
+		"cityStateType": "Maritime",
+
+		"declaringWar": "lah",
+		"attacked": "lah",
+		"defeated": "lah",
+		"outerColor": [255, 255, 255],
+		"innerColor": [235, 26, 47],
+		"cities": ["모낙호폴리스"]
+	},
+	{
+		"name": "모낙호폴리스",
+		"adjective": ["모낙호폴리스의"],
+		"cityStateType": "Maritime",
+
+		"declaringWar": "lah",
+		"attacked": "lah",
+		"defeated": "lah",
+		"outerColor": [255, 255, 255],
+		"innerColor": [235, 26, 47],
+		"cities": ["모낙호폴리스"]
 	}
 ]
