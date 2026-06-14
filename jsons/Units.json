@@ -516,20 +516,7 @@
 
 
 	// 알제사무소
-	{
-		"name": "스파이",
-		"unitType": "Civilian",
-		"uniqueTo": "Alje Office Autonomous Branch",
-		"movement": 2,
-		"promotions": ["Ignore terrain cost"],
-		"cost": 75
-		"uniques": [
-			"Invisible to others",
-			"May enter foreign tiles without open borders",
-			"[1] Sight <when not at war>",
-			"[3] Sight <when at war>"
-		],
-	},
+	
 
 	//바바리안
 	{
