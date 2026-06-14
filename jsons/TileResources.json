@@ -50,7 +50,7 @@
         ]
     },
 
-
+//Stockpiled
 
     // 인게임 수치
     {
@@ -59,7 +59,8 @@
         "uniques": [
             "Cannot be traded",
 			"Excluded from map editor",
-			"Doesn't generate naturally"
+			"Doesn't generate naturally",
+			"Not shown on world screen"
         ]
     },
     {
@@ -68,7 +69,8 @@
         "uniques": [
             "Cannot be traded",
 			"Excluded from map editor",
-			"Doesn't generate naturally"
+			"Doesn't generate naturally",
+			"Not shown on world screen"
         ]
     },
 
@@ -90,6 +92,15 @@
         ]
     },
     // Strategic resources
+	{
+        "name": "Alje-Offices",
+        "resourceType": "Strategic",
+        "uniques": [
+            "Excluded from map editor",
+			"Doesn't generate naturally",
+			"Not shown on world screen <without [Alje-Offices]>",
+        ]
+    },
 
     // Luxury resources
 
