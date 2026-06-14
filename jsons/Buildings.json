@@ -538,7 +538,7 @@
 	// 알제사무소 고유 건물
 	{
 		"name": "제발 팬텀 안나오게 해주세요 기념비",
-		"uniqueTo": "Alje Office",
+		"uniqueTo": "State of Alje Office",
 		"replaces": "Monument",
 		"cost": 35,
 		"culture":4,
