@@ -534,5 +534,18 @@
 		"requiredBuilding": "Walls",
 		"requiredTech": "Chivalry",
 		"uniques": ["Destroyed when the city is captured", "[non-air] Units adjacent to this city heal [+5] HP per turn when healing"]
+	},
+	// 알제사무소 고유 건물
+	{
+		"name": "제발 팬텀 안나오게 해주세요 기념비",
+		"uniqueTo": "Alje Office",
+		"replaces": "Monument",
+		"cost": 35,
+		"culture":4,
+		"production": 2,
+		"cityStrength": 2,
+		"cityHealth": 35,
+		"hurryCostModifier": 25,
+		"uniques": ["Destroyed when the city is captured"]
 	}
 ]
