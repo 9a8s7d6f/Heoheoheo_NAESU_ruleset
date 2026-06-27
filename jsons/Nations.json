@@ -39,6 +39,11 @@
 			"[+1 Gold, +1 Production] [in this city] <in cities connected to the capital> <hidden from users>",
 			"Comment [ - [문명의 발상지]: [[+1 Gold, +1 Production] [in capital]], [[+1 Gold, +1 Production] [in this city] <in cities connected to the capital>] ]",
 
+			"[+1 Culture] [in capital] <hidden from users>",
+			"[+1] Strength",
+			"[+20]% enemy spy effectiveness [in all cities]",
+			"Comment [ - [로마 그 자체]: [[+1 Culture] [in capital]], [[+1] Strength],[[+20]% enemy spy effectiveness [in all cities]]",
+
 			"[+1453]% Production when constructing [Aya Sofya] wonders [in capital] <hidden from users>",
 			"[+529]% Production when constructing [Aya Sofya] wonders [in capital] <after discovering [Masonry]> <hidden from users>",
 			"[+500]% Production when constructing [Aya Sofya] wonders [in capital] <after discovering [Construction]> <hidden from users>",
@@ -56,6 +61,7 @@
 			"Nullifies [Culture] [in all cities] <when below [-50] [Happiness]> <hidden from users>",
 			"Nullifies [Science] [in all cities] <when below [-50] [Happiness]> <hidden from users>",
 			"Comment [ - [중심주의적 권위체제]: [[-22]% [Happiness]],[[-1 Happiness]],[[-10]% [Production] [in all cities] <when between [-9] and [0] [Happiness]>],[[-20]% [Production] [in all cities] <when between [-19] and [-10] [Happiness]>],[[-30]% [Production] [in all cities] <when between [-29] and [-20] [Happiness]>],[[-50]% [Production] [in all cities] <when between [-39] and [-30] [Happiness]>],[[-65]% [Production] [in all cities] <when below [-40] [Happiness]>],[Nullifies [Culture] [in all cities] <when below [-50] [Happiness]>],[Nullifies [Science] [in all cities] <when below [-50] [Happiness]>] ]",
+
 			
 			"Gain a free [Heoheoheodevil] [in all cities] <when number of [[World Wonder] Buildings] is more than [4]>"
 		],
@@ -107,7 +113,7 @@
 		"tradeRequest": "Yae keurimkeuriryeom!!",
 		"outerColor": [16,16,16],
 		"innerColor": [255,200,200],
-		"uniqueName": "accumulation of wealth",
+		"uniqueName": "테오도시아나 자유국 보정치",
 		"uniques": [
 			"[+3 Gold] [in all cities]",
 			"[+2 Gold] from each Trade Route",
